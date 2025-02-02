@@ -1,0 +1,72 @@
+body{
+    background-color:white;
+    opacity:1;
+}
+img{
+    height:13.8%;
+    width: 13.8%;
+    border-radius:50%;
+    border:2px solid bisque;
+    padding: 2px;
+    display: block;
+    margin: auto;
+    align-content: center;
+}
+.loki{
+    
+    text-align: center;
+    color:aqua;
+    text-shadow: 1.5px 1.5px 1.5px blue;
+}
+h3{
+    text-align:center;
+    color:rgb(16, 15, 15);
+    font-size:large;
+}
+p{
+    text-align: center;
+    color:rgb(15, 15, 15);
+}
+.skills{
+    text-align: left;
+    color:rgb(9, 9, 9);
+    font-size: x-large;
+}
+ul{
+    color:rgb(16, 14, 14);
+    margin-left: 50px;
+}
+.Lokesh{
+    color: rgb(50, 232, 232);
+    text-shadow: 1.5px 1.5px 1.5px blue;
+}
+.internships{
+    text-align: left;
+    color:rgb(30, 31, 28);
+    font-size: x-large;
+}
+.intern{
+    color:rgb(10, 10, 10);
+    margin-left: 8px;
+}
+.projects{
+    text-align: left;
+    color:rgb(23, 23, 22);
+    font-size: x-large;
+}
+.pro{
+    color:rgb(23, 21, 21);
+    margin-left: 50px;
+}
+form{
+    border-radius: 20px;
+    margin: auto;
+    size: 10px 20px;
+    text-align: center;
+    color: rgb(71, 67, 182);
+    input{
+        border-radius: 10px;
+        margin:10px;
+        padding: 10px;
+    }
+}
