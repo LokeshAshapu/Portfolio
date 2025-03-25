@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokesh Portfolio</title>
+    <!--<img src="C:\Users\ASUS\OneDrive\Desktop\lokesh.jpg" alt="Avatar">-->
+    <link href="./portfolio.css" rel="stylesheet">
+    <!--<link href="./portfolio.js" rel="Script">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="./img/msl.png" type="image/x-icon">
+
+
+</head>
+<body>
+    <section class="body-nav">
+    <nav class="action" id="nav">
+        <ul>
+            <li><a href="#about-myself">About</a></li>
+            <li><a href="#my-skills">Skills</a></li>
+            <li><a href="#programming-languages">Programming Languages</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="icon" id="toggle">
+            <div class="line line1">-</div>
+            <div class="line line2">-</div>
+        </button>
+    </nav>
+    </section>
+    <header id="header-section" class="header-section">
+        <center>
+            <h2 class="header-about">This is lokesh a <i>Front-end developer</i></h2>
+        </center>
+    </header>
+    <main>
+        <section id="about-myself" class="about-section">
+            <div class="about-myself">
+                <center>
+                <h2>About Myself</h2>
+                <img src="./img/Lokii.jpg" alt="Lokii" srcset="" class="avatar">
+                <center class="content">
+                    <p>Hi, I'm Lokesh, a passionate Front-End Developer dedicated to crafting responsive, user-friendly, and visually appealing websites. Currently pursuing my B.Tech in Computer Science and Engineering at Sri Sivani College of Engineering, I specialize in bringing creative ideas to life using HTML, CSS, JavaScript, and modern frameworks.
+                        <br/><br/>
+                        With a keen eye for design and a deep understanding of UI/UX principles, I aim to build seamless digital experiences that leave a lasting impact.</p>
+                </center>
+            </center>
+            </div>
+        </section>
+        <section id="my-skills" class="skills">
+            <div class="my-skills">
+                <hr/>
+                <h2>Skills</h2>
+                <div class="icon-container">
+                    
+                        <img src="./img/c.png" alt="" height="30px">
+                        <img src="./img/icons8-java-logo-1500.png" alt="">
+                        <img src="./img/python.webp" alt="">
+                        <img src="./img/html.webp" alt="">
+                        <img src="./img/css.webp" alt="">
+                        <img src="./img/js.png" alt="">
+                        <img src="./img/git.webp" alt="">
+                        <img src="./img/github.webp" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="programming-languages">
+            <center>
+            <hr class="hr-1"/>
+            <h2 style="text-align: center;">Programming Languages</h2>
+            <div class="skill">
+                <p>Python</p>
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="75"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>HTML</p>
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="90"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="60"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-container">
+                    <div class="progress-bar" data-progress="80"></div>
+                </div>
+            </div>
+            </center>
+        </section>
+        <center>
+            <hr class="hr-1"/>
+            <section class="projects" id="projects">
+                <h2>My Projects</h2>
+                <p>Take a look of my projects</p>
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="./img/chatbot.png" alt="">
+                        <h3>Project-1</h3>
+                        <p><b>Restro-Chatbot an ML project</b><br/><br/>Restaurant chatbots streamline operations, enhance customer experience, and offer personalized services, like reservations and ordering.</p>
+                        <a href="https://restaurant-chatbot-loki.streamlit.app/" class="btn">visit now</a>
+                    </div>
+                </div>
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="./img/AI-Resume-Screening.jpg" alt="">
+                        <h3>Project-2</h3>
+                        <p><b>Ai resume screening and ranking system</b><br/><br/>AI resume screening systems efficiently sort and rank candidates based on job requirements, saving recruiters time.</p>
+                        <a href="https://lokesh-ai-resume-screening-and-ranking-system.streamlit.app/" class="btn">visit now</a>
+                    </div>
+                </div>
+                <div class="project-thumbnail">
+                    <div class="thumbnail-content">
+                        <img src="./img/portfolio.jpg" alt="">
+                        <h3>Project-3</h3>
+                        <p>Portfolio website</p>
+                        <a href="portfolio.html" class="btn">visit now</a>
+                    </div>
+                </div>
+                <hr class="hr-1"/>
+                <h2>Contact Us</h2>
+            </section>
+        </center>
+        </section>
+        <section class="body">
+            <center>
+                <div class="form-container" id="contact">
+                    <h2 class="connect">Contact Us</h2>
+                    <form action="#" method="POST">
+                        <div class="input-group">
+                            <label for="name" class="label">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email" class="label">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="message" class="label">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Type your message..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </form>
+                </div>
+            </center>
+        </section>
+    </main>
+    <footer>
+        <hr class="hr-1"/>
+        <center>
+            <div>
+                <h2>Follow me</h2>
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/ashapu-lokesh-25159a298 " class="social-media-icon" target="_blank" rel="noopener">
+                        <img src="./img/linkedin.png" alt="linkedin" height="30px">
+                    </a>
+                    <a href="mailto:lokeshashapu@gmail.com" class="social-media-icon" target="_blank">
+                        <img src="./img/gmail.png" alt="gmail" height="30px">
+                    </a>
+                    <a href="https://x.com/AshapuLokesh" class="social-media-icon" target="_blank" rel="noopener">
+                        <img src="./img/x.png" alt="x" height="30px">
+                    </a>
+                </div>
+            </div>
+            <p>&copy; 2025 Lokesh. My Portfolio.</p>
+            <div id="dark-mode-toggle" class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </center>
+    </footer>
+</body>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const progressBar = entry.target.querySelector('.progress-bar');
+                const progress = progressBar.dataset.progress;
+
+                console.log(`Animating: ${progress}%`); // Debugging
+
+                progressBar.style.width = `${progress}%`; // Expands from left to right
+                observer.unobserve(entry.target); // Stop observing once animated
+            }
+        });
+    });
+
+    const skills = document.querySelectorAll('#programming-languages .skill');
+    skills.forEach(skill => observer.observe(skill));
+});
+
+    document.addEventListener('DOMContentLoaded', function () {
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    const savedMode = localStorage.getItem('mode');
+
+    if (savedMode === 'dark') {
+        body.classList.add('dark-mode');
+        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        const currentMode = body.classList.contains('dark-mode') ? 'dark' : 'light';
+        localStorage.setItem('mode', currentMode);
+        darkModeToggle.innerHTML = currentMode === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    });
+});
+
+</script>
+</html>

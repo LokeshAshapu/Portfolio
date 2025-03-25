@@ -1,0 +1,361 @@
+.header-section{
+    margin-top: 70px;
+    height: 80px;
+    width: 100%;
+    background: linear-gradient(to right,#831bcb,#f9620b);
+}
+
+.header-about{
+    padding-top: 10px;
+    color: burlywood;
+    font-size: 30px;
+    text-align: center;
+}
+
+body.dark-mode{
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .header-section, .dark-mode .about-myself, .dark-mode .projects , .dark-mode .about-myself , .dark-mode .about-section , .dark-mode .form-container{
+    background-color: #1e1e1e;
+}
+
+.dark-mode .header-about , .dark-mode .connect{
+    color: white;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center;
+    min-height: 50vh; /* Ensures it takes full screen height */
+}
+
+.about-myself {
+    width: 60%; /* Adjust width as needed */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.about-myself img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+
+.about-myself img:hover{
+    box-shadow: 5px 5px 5px 5px rgba(50, 159, 242, 0.3);
+}
+
+.content {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hr{
+    margin-top: 280px;
+}
+
+.my-skills h2{
+    text-align: center;
+    font-size: 30px;
+}
+.submit-btn-1{
+    justify-content: center;
+}
+
+.icon-container{
+    display: flex;
+    animation: scrollAnimation 20s linear infinite alternate;
+    width: max-content;
+
+}
+
+.icon-container img{
+    width: auto;
+    height: 60px;
+    margin-right: 60px;
+    margin-left: 65px;
+}
+
+@keyframes scrollAnimation {
+
+    0%{
+        transform: translateX(-100vw);
+    }
+    100%{
+        transform: translateX(100vw);
+    }
+
+}
+
+#programming-languages {
+    margin-top: 50px;
+}
+
+#programming-languages .skill {
+    margin-bottom: 20px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    width: 0%; /* Start at 0% */
+    height: 20px;
+    background: linear-gradient(to right, #831bcb, #f9620b); /* Gradient from left to right */
+    border-radius: 10px;
+    transition: width 1.5s ease-in-out; /* Smooth left-to-right animation */
+}
+
+
+.projects{
+    margin: 50px 0px 50px 0px;
+}
+
+.project-thumbnail{
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    width: 350px;
+    height: 380px;
+    margin-bottom: 10px;
+}
+
+.project-thumbnail:hover{
+    box-shadow: 3px 3px 3px 3px rgba(50, 159, 242, 0.3);
+}
+.thumbnail-content{
+    padding: 0px 0px 20px 0px;
+    margin-left: 0px;
+}
+
+.thumbnail-content img{
+    width: 250px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.thumbnail-content h3{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.thumbnail-content p{
+    margin-top: 10px;
+}
+
+.thumbnail-content .btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #831bcb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.thumbnail-content .btn-1{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #831bcb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.thumbnail-content .btn:hover{
+    background-color: #f9620b;
+}
+
+.hr-1{
+    margin-top: 50px;
+}
+
+/* General Styles */
+.body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+/* Form Container */
+.form-container {
+    background: white;
+    padding: 20px 40px 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    margin-left: -20px;
+}
+
+.connect {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #831bcb;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-left: 10px;
+}
+
+.submit-btn:hover {
+    background: #f9620b;
+}
+
+.social-media-icon {
+    padding: 5px ;
+}
+
+#nav-links .submit-btn-1{
+    text-decoration: none;
+    color: #fff;
+}
+
+#nav-links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-media {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-media a{
+    text-decoration: none;
+}
+
+/* NAVIGATION STYLES */
+nav {
+    background-color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Hide nav links for mobile */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: white;
+        width: 100%;
+        padding: 10px 0;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    /* Hamburger Menu */
+    .icon {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+    }
+
+    .line {
+        width: 30px;
+        height: 4px;
+        background: #333;
+        transition: 0.3s;
+    }
+
+    /* Animation for toggle */
+    .icon.active .line1 {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .icon.active .line2 {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
