@@ -1,3 +1,7 @@
-"scripts": {
-  "build": "react-scripts build"
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "react-scripts build"
+  }
 }
