@@ -673,3 +673,16 @@ a {
     transform: translateY(-2px);
     font-style: inherit;
 }
+
+@media(max-width: 768px) {
+    .prodiv {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prodiv1 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+}
