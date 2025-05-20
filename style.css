@@ -223,10 +223,6 @@ html {
     font-size: 3rem
 }
 
-.f1 {
-    font-size:1rem;
-}
-
 .lokesh {
     color: #1852ff;
     font-size: 3rem;
@@ -679,9 +675,6 @@ a {
 }
 
 @media(max-width: 768px) {
-    .f1 {
-        font-size:0.6rem;
-    }
     .prodiv {
         flex-direction: column;
         align-items: center;
