@@ -100,7 +100,7 @@ html {
     .navbar-container input[type=checkbox] {
         position: absolute;
         height: 32px;
-        width: 30px;
+        width: 50px;
         top: 20px;
         left: 20px;
         z-index: 5;
@@ -146,7 +146,7 @@ html {
         margin-top: 80vh;
         background: #fff;
         height: 100vh;
-        max-width: 300px;
+        width: 200px;
         transform: translate(-150%);
         display: flex;
         flex-direction: column;
@@ -166,7 +166,7 @@ html {
         position: absolute;
         top: 10px;
         right: 15px;
-        font-size: 2.5rem
+        font-size: 2rem
     }
 
     .navbar-container input[type=checkbox]:checked~.menu-items {
@@ -687,5 +687,130 @@ a {
     .prodiv1 img {
         width: 100%;
     }
-    
+    .prodiv1 h4 {
+        font-size: 0.5rem;
+    }
+    .prodiv1 div{
+        font-size: small;
+    }
+    #footer {
+        padding: 10px 10px;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
+        font-size: medium;
+    }
+    .footer div{
+        margin-top: 10px;
+    }
+    .loki {
+        width: 300px;
+        margin-top: 30px;
+    }
+    .about1{
+        margin-left: 0px;
+    }
+    .about {
+        font-size: 2rem;
+    }
+    .lokesh {
+        font-size: 2rem;
+    }
+    .para {
+        font-size: 1rem;
+    }
+    .btn {
+        width: 120px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .btn:hover {
+        width: 120px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .header {
+        width: 150px;
+        height: 20px;
+        font-size: 0.6rem;
+    }
+    .header-1 {
+        width: 100px;
+        height: 20px;
+    }
+    .header-2 {
+        width: 100px;
+        height: 20px;
+    }
+    #About {
+        display: flex;
+        flex-direction: column-reverse;
+        padding:150px 30px 30px 30px;
+    }
+    .crt h2{
+        font-size: 0.7rem;
+    }
+    .cert {
+        font-size: medium;
+    }
+    .crt{
+        width: 80%;
+    }
+    .certt, .certt-1{
+        font-size: 0.5rem;
+    }
+    .cert-2{
+        padding: 5px;
+    }
+    .cert-2 h3{
+        font-size: 0.6rem;
+    }
+    .crt-1{
+        margin: 0px 0 0 0px;
+    }
+    .cert-1{
+        font-size :0.8rem ;
+    }
+    .cert-2 h5 p {
+        font-size: 0.1rem;
+    }
+    .cert-3{
+        width: 90%;
+    }
+    .cert-3 h3{
+        font-size: 0.8rem;
+    }
+    .cert-3 h5{
+        font-size: 0.6rem;
+    }
+    .cert-3 p{
+        font-size: 0.6rem;
+    }
+    .certt-2{
+        font-size: 0.8rem;
+    }
+    .certt-3{
+        font-size: 0.8rem;
+    }
+    .cert-3:hover {
+        width: 90%;
+    }
+    .cert-3 .header-2 {
+        width: 80px;
+        height: 20px;
+        font-size: 0.6rem;
+    }
+    .crt {
+        display: flex;
+        flex-direction: column;
+    }
+    .certifications{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cert-2:hover {
+        width: fit-content;
+    }
 }
