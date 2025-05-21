@@ -15,19 +15,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-const elements = document.querySelectorAll('.block, .crt, .hire, .cert-3, #Contact_me');
+ const elements = document.querySelectorAll('.block, .crt, .hire, .cert-3, #Contact_me');
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
+        observer.unobserve(entry.target); // Optional: animate only once
       }
     });
   }, {
     threshold: 0.1
   });
 
-  elements.forEach(el => {
-    el.classList.add('hidden');
+  elements.forEach((el) => {
     observer.observe(el);
   });
+
