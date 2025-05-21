@@ -815,12 +815,12 @@ a {
     }
 }
    
-.block, .crt, .hire, .cert-3, #Contact_me {
+/*  .block, .crt, .hire, .cert-3, #Contact_me {
     animation: appear linear;
     animation-timeline: view() ;
 /*     animation: appear 0.5s linear; */
-}
-@keyframes appear{
+} */
+/* @keyframes appear{
     0%{
         opacity: 0;
         transform: translateY(-50px);
@@ -829,5 +829,17 @@ a {
         opacity: 1;
         transform: translateY(0);
     }
+}
+ */ 
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: all 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
