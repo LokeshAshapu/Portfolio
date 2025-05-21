@@ -815,7 +815,7 @@ a {
     }
 }
    
-.block, .crt, .hire, .cert-3, #Contact_me {
+/* .block, .crt, .hire, .cert-3, #Contact_me {
     opacity: 0;
     transform: translateY(-50px);
     transition: all 0.5s ease-in-out;
@@ -824,6 +824,16 @@ a {
 .show {
     opacity: 1;
     transform: translateY(0px);
+} */
+.block, .crt, .hire, .cert-3, #Contact_me {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 
