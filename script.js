@@ -15,17 +15,35 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
- const elements = document.querySelectorAll('.block, .crt, .hire, .cert-3, #Contact_me');
+ // const elements = document.querySelectorAll('.block, .crt, .hire, .cert-3, #Contact_me');
+
+ //  const observer = new IntersectionObserver((entries) => {
+ //    entries.forEach((entry) => {
+ //      if (entry.isIntersecting) {
+ //        entry.target.classList.add('show');
+ //        observer.unobserve(entry.target); // Optional: animate only once
+ //      }
+ //    });
+ //  }, {
+ //    threshold: 0.1
+ //  });
+
+const elements = document.querySelectorAll('.block, .crt, .hire, .cert-3, #Contact_me');
 
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
+    entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
-        observer.unobserve(entry.target); // Optional: animate only once
+      } else {
+        entry.target.classList.remove('show');
       }
     });
   }, {
-    threshold: 0.1
+    threshold: 0.1 // adjust sensitivity here
+  });
+
+  elements.forEach(el => {
+    observer.observe(el);
   });
 
   elements.forEach((el) => {
