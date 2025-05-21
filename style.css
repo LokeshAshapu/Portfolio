@@ -816,10 +816,9 @@ a {
 }
    
 .block, .crt, .hire, .cert-3, #Contact_me {
-/*     animation: appear linear;
-    animation-timeline: view() ; */
-    animation: appear 0.5s linear;
-
+    animation: appear linear;
+    animation-timeline: view() ;
+/*     animation: appear 0.5s linear; */
 }
 @keyframes appear{
     0%{
