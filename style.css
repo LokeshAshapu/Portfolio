@@ -321,6 +321,7 @@ html {
 
 .navbar .logo:hover {
     transform: translateY(-3px)
+    color: black;
 }
 
 
