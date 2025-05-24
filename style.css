@@ -61,6 +61,11 @@ html {
     order: 1;
     font-size: 2.3rem
 }
+.navbar .logo:hover {
+    color: black;
+    transform: translateY(-3px)
+   
+}
 
 .menu-items li {
     list-style: none;
@@ -318,13 +323,6 @@ html {
     box-shadow: 1px 1px 0 1px #eaeaea;
     transform: translateY(-3px)
 }
-
-.navbar .logo:hover {
-    color: black;
-    transform: translateY(-3px)
-   
-}
-
 
 .block-container {
     margin-top: 50px;
