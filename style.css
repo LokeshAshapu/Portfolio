@@ -319,6 +319,11 @@ html {
     transform: translateY(-3px)
 }
 
+.navbar .logo:hover {
+    transform: translateY(-3px)
+}
+
+
 .block-container {
     margin-top: 50px;
     display: flex;
