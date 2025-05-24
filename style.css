@@ -64,7 +64,11 @@ html {
 .navbar .Logo:hover {
     color: black;
     transform: translateY(-3px)
-   
+}
+
+.navbar .logo:hover {
+    color: black;
+    transform: translateY(-3px)
 }
 
 .menu-items li {
