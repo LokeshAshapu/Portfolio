@@ -320,8 +320,9 @@ html {
 }
 
 .navbar .logo:hover {
-    transform: translateY(-3px)
     color: black;
+    transform: translateY(-3px)
+   
 }
 
 
