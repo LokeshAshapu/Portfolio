@@ -824,16 +824,6 @@ a {
     }
 }
    
-/* .block, .crt, .hire, .cert-3, #Contact_me {
-    opacity: 0;
-    transform: translateY(-50px);
-    transition: all 0.5s ease-in-out;
-}
-
-.show {
-    opacity: 1;
-    transform: translateY(0px);
-} */
 .block, .crt, .hire, .cert-3 {
     opacity: 0;
     transform: translateY(-50px);
