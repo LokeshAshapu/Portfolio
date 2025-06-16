@@ -689,6 +689,9 @@ a {
     font-style: inherit;
 }
 
+.lang{
+    font-size:10px;
+}
 @media(max-width: 768px) {
     .Projects_main {
        flex-direction:column;
