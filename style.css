@@ -600,7 +600,7 @@ a {
     font-size: 2rem;
     font-weight: 600;
 }
-.projects {
+.Projects_main {
     display:flex;
     justify-content:space-between;
     flex-direction:row;
@@ -689,7 +689,7 @@ a {
 }
 
 @media(max-width: 768px) {
-    .projects {
+    .Projects_main {
        flex-direction:column;
     }
     .prodiv {
