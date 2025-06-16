@@ -600,6 +600,11 @@ a {
     font-size: 2rem;
     font-weight: 600;
 }
+.projects {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:row;
+}
 
 .para-3 {
     color: #444;
@@ -684,6 +689,9 @@ a {
 }
 
 @media(max-width: 768px) {
+    .projects {
+       flex-direction:column;
+    }
     .prodiv {
         flex-direction: column;
         align-items: center;
