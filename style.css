@@ -602,7 +602,7 @@ a {
 }
 .Projects_main {
     display:flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     flex-direction:row;
 }
 
