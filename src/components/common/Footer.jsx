@@ -65,7 +65,7 @@ const Footer = () => {
                     </h4>
                     <div style={{ display: 'flex', gap: '1.5rem', fontSize: '0.9rem' }}>
                         <Link to="/" style={{ color: 'var(--text-muted)' }}>Home</Link>
-                        <Link to="/projects.html" style={{ color: 'var(--text-muted)' }}>Projects</Link>
+                        <Link to="/projects" style={{ color: 'var(--text-muted)' }}>Projects</Link>
                     </div>
                     <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>© 2025 All Rights Reserved</p>
                 </div>
