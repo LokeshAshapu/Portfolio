@@ -20,7 +20,7 @@ const Projects = () => {
             img: portfolioImg,
             desc: "Responsive and animated portfolio site showcasing resume, projects, and contact information.",
             tags: ["HTML", "CSS", "JavaScript"],
-            live: "https://ashapulokeshportfolio.netlify.app",
+            live: "https://ashapulokesh.vercel.app/",
             github: "https://github.com/LokeshAshapu"
         },
         {
