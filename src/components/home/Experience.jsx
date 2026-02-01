@@ -69,6 +69,114 @@ const Experience = () => {
     return (
         <section id="experience" style={{ padding: 'var(--section-padding)' }}>
             <div className="container">
+                {/* Experience (Jobs) - Premium Upgrade */}
+                <div style={{ maxWidth: '900px', margin: '0 auto 5rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '3rem', justifyContent: 'center' }}>
+                        <div style={{
+                            background: 'var(--primary-accent)',
+                            padding: '12px',
+                            borderRadius: '12px',
+                            boxShadow: '0 0 20px rgba(59, 130, 246, 0.4)'
+                        }}>
+                            <Briefcase size={28} color="white" />
+                        </div>
+                        <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>Professional <span className="text-gradient">Journey</span></h2>
+                    </div>
+
+                    <div style={{ position: 'relative' }}>
+                        {/* Connecting Line */}
+                        <div style={{
+                            position: 'absolute',
+                            left: '20px',
+                            top: '20px',
+                            bottom: '20px',
+                            width: '2px',
+                            background: 'linear-gradient(to bottom, var(--primary-accent), transparent)',
+                            opacity: 0.3
+                        }} className="hidden md:block"></div>
+
+                        {jobs.map((job, i) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, x: -30 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: i * 0.1 }}
+                                className="glass-panel"
+                                whileHover={{
+                                    scale: 1.02,
+                                    borderColor: 'var(--primary-accent)',
+                                    backgroundColor: 'rgba(255, 255, 255, 0.04)'
+                                }}
+                                style={{
+                                    padding: '2.5rem',
+                                    borderRadius: '1.5rem',
+                                    marginBottom: '2rem',
+                                    position: 'relative',
+                                    border: '1px solid var(--glass-border)',
+                                    marginLeft: '0',
+                                    // Desktop indent for timeline
+                                    '@media (min-width: 768px)': { marginLeft: '3rem' }
+                                }}
+                            >
+                                {/* Timeline Dot (Desktop only visually) */}
+                                <div className="hidden md:block" style={{
+                                    position: 'absolute',
+                                    left: '-41px', // Adjust based on parent padding/margin
+                                    top: '50%',
+                                    transform: 'translateY(-50%)',
+                                    width: '16px',
+                                    height: '16px',
+                                    background: 'var(--bg-dark)',
+                                    border: '2px solid var(--primary-accent)',
+                                    borderRadius: '50%',
+                                    boxShadow: '0 0 10px var(--primary-accent)',
+                                    zIndex: 10
+                                }}></div>
+
+                                <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '1rem', alignItems: 'start' }}>
+                                    <div>
+                                        <h3 style={{ fontSize: '1.75rem', fontWeight: 'bold', marginBottom: '0.5rem', lineHeight: 1.2 }}>{job.title}</h3>
+                                        <h4 style={{
+                                            color: 'var(--primary-accent)',
+                                            fontSize: '1.1rem',
+                                            fontWeight: '500',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            gap: '0.5rem'
+                                        }}>
+                                            {job.company}
+                                        </h4>
+                                    </div>
+                                    <span style={{
+                                        background: 'rgba(59, 130, 246, 0.1)',
+                                        color: 'var(--primary-accent)',
+                                        padding: '6px 16px',
+                                        borderRadius: '999px',
+                                        fontSize: '0.9rem',
+                                        fontWeight: '600',
+                                        whiteSpace: 'nowrap',
+                                        border: '1px solid rgba(59, 130, 246, 0.2)'
+                                    }}>
+                                        {job.year}
+                                    </span>
+                                </div>
+
+                                <div style={{ width: '100%', height: '1px', background: 'var(--glass-border)', margin: '1.5rem 0' }}></div>
+
+                                <p style={{
+                                    color: 'var(--text-muted)',
+                                    fontSize: '1rem',
+                                    lineHeight: '1.7',
+                                    opacity: 0.9
+                                }}>
+                                    {job.desc}
+                                </p>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+
                 <center style={{ marginBottom: '4rem' }}>
                     <span className="header">Milestones</span>
                     <h2 style={{ fontSize: '2.5rem', margin: '1rem 0' }}>Achievements & Experience</h2>
@@ -76,20 +184,6 @@ const Experience = () => {
                 </center>
 
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2rem' }}>
-
-                    {/* Experience */}
-                    <Section title="Experience" icon={<Briefcase size={32} />}>
-                        {jobs.map((job, i) => (
-                            <div key={i} style={{ borderLeft: '2px solid var(--glass-border)', paddingLeft: '1.5rem', position: 'relative' }}>
-                                <div style={{ position: 'absolute', left: '-5px', top: '0', width: '8px', height: '8px', borderRadius: '50%', background: 'var(--primary-accent)' }}></div>
-                                <h3 style={{ fontSize: '1.2rem', fontWeight: '600' }}>{job.title}</h3>
-                                <div style={{ color: 'var(--primary-accent)', fontSize: '0.9rem', marginBottom: '0.5rem' }}>{job.company} • {job.year}</div>
-                                <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>{job.desc}</p>
-                            </div>
-                        ))}
-                    </Section>
-
-
 
                     {/* Achievements */}
                     <Section title="Achievements" icon={<Trophy size={32} />}>

@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <>
             {/* Hire Me Section */}
-            <section id="Contact" style={{ padding: 'var(--section-padding)' }}>
+            <section style={{ padding: 'var(--section-padding)' }}>
                 <div className="container">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
@@ -31,21 +31,23 @@ const Contact = () => {
                         </p>
 
                         <motion.a
-                            href="mailto:lokeshashapu@gmail.com"
+                            href="https://drive.google.com/file/d/1nLdcF-p1dhQW6GSYAEeKd69FWReXcVUu/view"
+                            target="_blank"
+                            rel="noreferrer"
                             className="btn-primary"
                             style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                         >
                             <Mail size={20} />
-                            Contact Me
+                            Resume
                         </motion.a>
                     </motion.div>
                 </div>
             </section>
 
             {/* Get in Touch / CTA Section */}
-            <section id="Contact_me" style={{ padding: '4rem 0', background: 'var(--bg-card)' }}>
+            <section id="Contact" style={{ padding: '4rem 0', background: 'var(--bg-card)' }}>
                 <div className="container">
                     <center>
                         <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Ready to Start Your Next Project?</h2>

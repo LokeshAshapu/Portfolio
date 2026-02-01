@@ -9,7 +9,7 @@ const Education = () => {
             school: "Sri Sivani College Of Engineering",
             year: "2023 - 2027",
             gpa: "8.01/10",
-            desc: "Focus on software development and data science."
+            desc: "Focus on software development and AI."
         },
         {
             degree: "Intermediate (MPC)",
