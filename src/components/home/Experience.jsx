@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Briefcase } from 'lucide-react';
+import { Award, Briefcase, Trophy } from 'lucide-react';
 
 const Experience = () => {
     const certifications = [
@@ -13,18 +13,36 @@ const Experience = () => {
         { title: "Artificial Intelligence Fundamentals", org: "HCL GUVI", year: "2025" },
     ];
 
+    const achievements = [
+        { title: "GenAI Hackathon Winner", org: "Zentrobytes", desc: "Secured 1st place in the Generative AI Hackathon." },
+        { title: "Poster Presentation Runner-up", org: "Avanti College Tech Fest", desc: "Awarded 2nd place for innovative technical presentation." },
+        { title: "Science Fest Participation", org: "Rathasapthami", desc: "Active participant in the annual Science exhibition." }
+    ];
+
     const jobs = [
         {
-            title: "AI and Data Analytics Intern",
-            company: "Edunet",
-            year: "2025",
-            desc: "Developed a restaurant chatbot using AI and data analytics to handle customer interactions, streamline reservations, and enhance user experience."
+            title: "Product Designer",
+            company: "OurFirstCode",
+            year: "Dec 2025 - Present",
+            desc: "Designed user-friendly interfaces through structured design workflows. Collaborated with developers to translate product requirements. Improved overall user experience using iterative feedback."
         },
         {
-            title: "AI Transformative Learning Intern",
-            company: "Edunet",
-            year: "2025",
-            desc: "Developed an AI-driven resume screening & ranking system using NLP and ML techniques to automate resume evaluation."
+            title: "Campus Ambassador",
+            company: "Google Gemini",
+            year: "Aug 2025 - Dec 2025",
+            desc: "Boosted campus engagement by 40% through targeted digital campaigns. Organized 3 webinars with 200+ attendees, enhancing brand reach. Mentored 20+ peers in resume building and interview skills."
+        },
+        {
+            title: "FullStack Web Developer Intern",
+            company: "WebStackAcademy",
+            year: "Sep 2025 - Nov 2025",
+            desc: "Gained hands-on experience building projects using MERN stack. Practiced foundational HTML, CSS, JavaScript, and React development. Worked on SDLC-based project development with structured workflows."
+        },
+        {
+            title: "Frontend Development Certification Program",
+            company: "IBM",
+            year: "Jun 2025 - Jul 2025",
+            desc: "Reduced page load time by 40% via lazy loading and CSS Grid optimization. Developed 8+ reusable UI components for scalability and maintainability. Collaborated in a 5-member Agile team, delivering features ahead of schedule."
         }
     ];
 
@@ -73,22 +91,66 @@ const Experience = () => {
 
 
 
-                    {/* Certifications (Updated layout to be more compact or grid) */}
+                    {/* Achievements */}
+                    <Section title="Achievements" icon={<Trophy size={32} />}>
+                        <div style={{ display: 'grid', gap: '1rem' }}>
+                            {achievements.map((item, i) => (
+                                <motion.div
+                                    key={i}
+                                    whileHover={{ x: 10, backgroundColor: 'rgba(255, 255, 255, 0.05)' }}
+                                    style={{
+                                        display: 'flex',
+                                        flexDirection: 'column',
+                                        padding: '1.5rem',
+                                        borderRadius: '0.75rem',
+                                        border: '1px solid var(--glass-border)',
+                                        background: 'rgba(255,255,255,0.02)',
+                                        transition: 'all 0.3s ease'
+                                    }}
+                                >
+                                    <h4 style={{ fontSize: '1.2rem', fontWeight: '600', color: 'var(--text-main)' }}>{item.title}</h4>
+                                    <div style={{ fontSize: '0.95rem', color: 'var(--primary-accent)', margin: '0.25rem 0' }}>{item.org}</div>
+                                    <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{item.desc}</p>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </Section>
+
+                    {/* Certifications */}
                     <Section title="Certifications" icon={<Award size={32} />}>
-                        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: '1rem' }}>
+                        <div style={{ display: 'grid', gap: '1rem' }}>
                             {certifications.map((cert, i) => (
-                                <div key={i} style={{
-                                    background: 'rgba(255,255,255,0.03)',
-                                    padding: '1rem',
-                                    borderRadius: '0.5rem',
-                                    border: '1px solid var(--glass-border)'
-                                }}>
-                                    <h4 style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>{cert.title}</h4>
-                                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                                        <span>{cert.org}</span>
-                                        <span>{cert.year}</span>
+                                <motion.div
+                                    key={i}
+                                    whileHover={{ x: 10, backgroundColor: 'rgba(255, 255, 255, 0.05)' }}
+                                    style={{
+                                        display: 'flex',
+                                        justifyContent: 'space-between',
+                                        alignItems: 'center',
+                                        padding: '1rem 1.5rem',
+                                        borderRadius: '0.75rem',
+                                        border: '1px solid var(--glass-border)',
+                                        background: 'rgba(255,255,255,0.02)',
+                                        transition: 'all 0.3s ease'
+                                    }}
+                                >
+                                    <div>
+                                        <h4 style={{ fontSize: '1.1rem', fontWeight: '500', color: 'var(--text-main)' }}>{cert.title}</h4>
+                                        <div style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
+                                            {cert.org}
+                                        </div>
                                     </div>
-                                </div>
+                                    <div style={{
+                                        fontSize: '0.85rem',
+                                        color: 'var(--primary-accent)',
+                                        background: 'rgba(59, 130, 246, 0.1)',
+                                        padding: '4px 12px',
+                                        borderRadius: '999px',
+                                        fontWeight: '500'
+                                    }}>
+                                        {cert.year}
+                                    </div>
+                                </motion.div>
                             ))}
                         </div>
                     </Section>
