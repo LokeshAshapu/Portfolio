@@ -1,23 +1,358 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./src/assets/logo.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet">
-  <title>Ashapu Lokesh | Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./logo (2).png" type="image/png">
+    <title>Ashapu Lokesh | Professional Portfolio</title>
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="nav-checkbox"/>
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#About">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+            <h1 class="logo"><a href="index.html">Ashapu Lokesh</a></h1>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="About" class="container">
+        <div class="about1">
+            <div class="header">GSA'25 &amp; Designer</div>
+            <h1 class="about">Hi, I'm <span class="lokesh">Ashapu Lokesh</span></h1>
+            <h3 style="font-size: 1.8rem; font-weight: 600; margin-bottom: 1.5rem; color: var(--text-secondary);">
+                I am a <span id="typed-text" class="typed-text"></span>
+            </h3>
+            <p class="para">Computer Engineering undergraduate, Google Student Ambassador (GSA'25), and Product Designer with experience in UI/UX design, frontend development, Python, graphic design, and prompt engineering. Passionate about building user-centric digital products by combining design, technology, and AI to solve real-world problems.</p>
+            <div class="connect">
+                <button class="btn"><a href="#Contact">Contact Me &nbsp; <i class="fa-solid fa-arrow-right"></i></a></button>
+                <a href="https://github.com/LokeshAshapu" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ashapu-lokesh-25159a298" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:lokeshashapu@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="loki-wrapper">
+            <img src="./loki.jpg" alt="Ashapu Lokesh" class="loki">
+        </div>
+    </section>
+
+    <!-- Skills & Technology -->
+    <section class="skills scroll-reveal" id="skills">
+        <div class="container">
+            <center>
+                <div class="header-1">Expertise</div>
+                <h1 class="section-title">Skills &amp; Technologies</h1>
+                <p class="para-1">A diverse, curated set of engineering and design skills I leverage to build state-of-the-art products</p>
+            </center>
+            <div class="block-container">
+                <div class="block">
+                    <div class="icon"><i class="fa-solid fa-code"></i></div>
+                    <h2 class="block-header">Languages</h2>
+                    <ul>
+                        <li class="li"><span>Python</span></li>
+                        <li class="li"><span>JavaScript</span></li>
+                        <li class="li"><span>SQL</span></li>
+                        <li class="li"><span>C</span></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h2 class="block-header">Frontend</h2>
+                    <ul>
+                        <li class="li"><span>React.js</span></li>
+                        <li class="li"><span>HTML5 &amp; CSS3</span></li>
+                        <li class="li"><span>Tailwind CSS</span></li>
+                        <li class="li"><span>Bootstrap</span></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="icon"><i class="fa-solid fa-server"></i></div>
+                    <h2 class="block-header">Backend &amp; DB</h2>
+                    <ul>
+                        <li class="li"><span>Node.js &amp; Express.js</span></li>
+                        <li class="li"><span>MongoDB &amp; Mongoose</span></li>
+                        <li class="li"><span>Django</span></li>
+                        <li class="li"><span>REST APIs &amp; Auth</span></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                    <h2 class="block-header">Design &amp; UI/UX</h2>
+                    <ul>
+                        <li class="li"><span>Figma &amp; FigJam</span></li>
+                        <li class="li"><span>Wireframing &amp; Prototyping</span></li>
+                        <li class="li"><span>Design Systems</span></li>
+                        <li class="li"><span>Canva &amp; Adobe Photoshop</span></li>
+                    </ul>
+                </div>
+                <div class="block">
+                    <div class="icon"><i class="fa-solid fa-robot"></i></div>
+                    <h2 class="block-header">AI &amp; Tools</h2>
+                    <ul>
+                        <li class="li"><span>Prompt Engineering</span></li>
+                        <li class="li"><span>Gemini &amp; ChatGPT</span></li>
+                        <li class="li"><span>Git &amp; GitHub</span></li>
+                        <li class="li"><span>VS Code &amp; Postman</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="About scroll-reveal" id="experience">
+        <div class="container">
+            <center>
+                <div class="header-1">Milestones</div>
+                <h1 class="section-title">Experience &amp; Journeys</h1>
+                <p class="para-1">Professional experiences and internships that have honed my engineering and collaborative capabilities</p>
+            </center>
+            <div class="certifications">
+                <!-- Left Column: Professional Experience -->
+                <div class="crt">
+                    <h2><i class="fa-solid fa-briefcase cert-1"></i> Professional Experience</h2>
+                    <div class="crt-1">
+                        <div class="cert-2">
+                            <h3>Graphic Designer</h3>
+                            <h5>Grovyn</h5>
+                            <p><i class="fa-solid fa-calendar-days"></i> Mar 2026 – Present</p>
+                            <p class="desc">Designed user-centric web and mobile interfaces using Figma with a focus on usability and responsive design. Created wireframes, prototypes, and design systems for digital products. Collaborated with developers to ensure accurate implementation of UI designs.</p>
+                        </div>
+                        <div class="cert-2">
+                            <h3>Frontend Development Program</h3>
+                            <h5>IBM Certification</h5>
+                            <p><i class="fa-solid fa-calendar-days"></i> Jul 2025 – Aug 2025</p>
+                            <p class="desc">Completed a frontend development program focused on modern web technologies and UI/UX best practices. Built responsive user interfaces while applying accessibility and performance principles.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Column: Internships & Programs -->
+                <div class="crt">
+                    <h2><i class="fa-solid fa-award cert-1"></i> Tech Internships</h2>
+                    <div class="crt-1">
+                        <div class="cert-2">
+                            <h3>AI &amp; Data Analytics focused on Green Skills</h3>
+                            <h5>Edunet Foundation</h5>
+                            <p><i class="fa-solid fa-calendar-days"></i> 2025</p>
+                            <p class="desc">Developed a smart restaurant chatbot using AI and data analytics to handle customer interactions, streamline reservations, and enhance user experience with smart, automated responses and menu assistance.</p>
+                        </div>
+                        <div class="cert-2">
+                            <h3>AI: Transformative Learning with TechSaksham</h3>
+                            <h5>Edunet Foundation</h5>
+                            <p><i class="fa-solid fa-calendar-days"></i> 2025</p>
+                            <p class="desc">Developed an AI-driven resume screening and ranking system. Utilized Natural Language Processing (NLP) and Machine Learning (ML) techniques to automate the evaluation of resumes, enabling efficient candidate-job matching and reducing manual effort in the hiring process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="leadership-section scroll-reveal">
+        <div class="container">
+            <center>
+                <div class="header-1">Impact</div>
+                <h1 class="section-title">Leadership</h1>
+                <p class="para-1">Stepping up to build communities, share knowledge, and lead student-tech ecosystems</p>
+            </center>
+            <div class="gsa-card">
+                <div class="gsa-logo-wrapper">
+                    <i class="fa-brands fa-google"></i>
+                </div>
+                <div class="gsa-info">
+                    <h3>Google Student Ambassador (GSA'25)</h3>
+                    <h4>Google Students Community</h4>
+                    <p>Organized AI, product design, and technology-focused workshops while connecting students with industry opportunities and emerging technologies. Championed tech learning, hosted developer groups, and built a collaborative network of technology enthusiasts within the university campus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section scroll-reveal" id="education">
+        <div class="container">
+            <center>
+                <div class="header-1">Academics</div>
+                <h1 class="section-title">Education History</h1>
+                <p class="para-1">My academic path and formal foundations in Computer Engineering</p>
+            </center>
+            <div class="education-grid">
+                <div class="cert-3">
+                    <div>
+                        <h3>Bachelor of Technology (B.Tech) – Computer Engineering</h3>
+                        <h5>Sri Sivani College of Engineering (Affiliated with JNTU)</h5>
+                        <p>Currently pursuing a B.Tech in Computer Science Engineering, with a focus on software engineering, web development, data science, and system design.</p>
+                    </div>
+                    <div class="edu-right">
+                        <p><i class="fa-solid fa-calendar-days"></i> &nbsp;2023 - 2027</p>
+                        <span class="header-2">GPA: 8.01 / 10</span>
+                    </div>
+                </div>
+                <div class="cert-3">
+                    <div>
+                        <h3>Intermediate Education (MPC)</h3>
+                        <h5>PPR Kaumudi Junior College</h5>
+                        <p>Focus on Mathematics, Physics, and Chemistry, establishing strong analytical foundations and problem-solving skills.</p>
+                    </div>
+                    <div class="edu-right">
+                        <p><i class="fa-solid fa-calendar-days"></i> &nbsp;2021 - 2023</p>
+                        <span class="header-2">GPA: 9.01 / 10</span>
+                    </div>
+                </div>
+                <div class="cert-3">
+                    <div>
+                        <h3>High School Education</h3>
+                        <h5>AP Model School, Tamavada</h5>
+                        <p>Completed secondary school education with high honors and structured coursework in science, mathematics, and English.</p>
+                    </div>
+                    <div class="edu-right">
+                        <p><i class="fa-solid fa-calendar-days"></i> &nbsp;2016 - 2021</p>
+                        <span class="header-2">GPA: 9.3 / 10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section scroll-reveal">
+        <div class="container">
+            <center>
+                <div class="header-1">Credentials</div>
+                <h1 class="section-title">Certifications</h1>
+                <p class="para-1">Additional qualifications and achievements I have earned in AI, software development, and engineering</p>
+            </center>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="cert-info">
+                        <h3>Programming in Java</h3>
+                        <p>NPTEL Certification</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="cert-info">
+                        <h3>5-Day AI Agents Intensive Course</h3>
+                        <p>Google / Kaggle Certification</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="cert-info">
+                        <h3>Entrepreneurship-Cum-Skill Program</h3>
+                        <p>RAMP Programme Certification</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="cert-info">
+                        <h3>Introduction to Python</h3>
+                        <p>Codio (2024)</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="cert-info">
+                        <h3>Introduction to Java Programming</h3>
+                        <p>Uc3m (2024)</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="cert-info">
+                        <h3>Data Structures and Algorithms</h3>
+                        <p>Uc3m (2024)</p>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="cert-info">
+                        <h3>GenAI 101 with Pieces credential</h3>
+                        <p>LetsUpgrade (2025)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hire Me CTA -->
+    <section class="hire scroll-reveal">
+        <div class="container">
+            <h1><i class="fa-solid fa-briefcase certt-2"></i> &nbsp;Hire Me</h1>
+            <p>I'm available for full-time positions, internships, and freelance projects. Let's create something amazing together!</p>
+            <button class="btn"><a href="mailto:lokeshashapu@gmail.com"><i class="fa-solid fa-envelope"></i> &nbsp;Contact Me</a></button>
+        </div>
+    </section>
+
+    <!-- Ready to Start -->
+    <section id="Contact" class="scroll-reveal" style="background-color: var(--bg-surface); padding: 100px 0; border-bottom: 1px solid var(--border-color);">
+        <div class="container">
+            <center>
+                <h1>Ready to Start Your Next Project?</h1>
+                <p class="para-1">I'm always looking for exciting opportunities to build exceptional digital experiences. Let's discuss how we can work together.</p>
+                <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+                    <p style="font-size: 1.1rem; color: var(--text-secondary);"><i class="fa-solid fa-phone" style="color: var(--color-primary);"></i> &nbsp;<strong>+91-6301451462</strong></p>
+                    <p style="font-size: 1.1rem; color: var(--text-secondary);"><i class="fa-solid fa-envelope" style="color: var(--color-primary);"></i> &nbsp;<strong>lokeshashapu@gmail.com</strong></p>
+                </div>
+                <br><br>
+                <button class="btn"><a href="mailto:lokeshashapu@gmail.com">Get in Touch</a></button>
+            </center>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <center>
+                <h2>Let's Connect</h2>
+            </center>
+            <div class="footer">
+                <div class="ss">
+                    <h4><i class="fa-solid fa-code d"></i> Ashapu Lokesh</h4>
+                    <p>&copy; 2026 All Rights Reserved</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#About">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="./projects.html">Projects</a>
+                </div>
+                <div class="footer-right">
+                    <a href="mailto:lokeshashapu@gmail.com" target="_blank" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/ashapu-lokesh-25159a298" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/LokeshAshapu" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://x.com/AshapuLokesh?t=T1v2TO-SFc3n_6lviQy5Fg&s=09" target="_blank" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <center>
+                <h5>Made with ❤️ by Ashapu Lokesh</h5>
+            </center>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
