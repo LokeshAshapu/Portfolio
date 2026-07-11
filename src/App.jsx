@@ -6,7 +6,9 @@ import LandingView from './components/LandingView';
 import ChatView from './components/ChatView';
 import InfoModal from './components/InfoModal';
 import ProjectDetailsModal from './components/ProjectDetailsModal';
+import FluidBackground from './components/FluidBackground';
 import logo from './assets/logo (2).png';
+import loki from './assets/loki.jpg';
 
 export default function App() {
   const [isInfoOpen, setInfoOpen] = useState(false);
@@ -100,6 +102,9 @@ export default function App() {
       theme === 'dark' ? 'bg-black text-slate-100' : view === 'chat' ? 'bg-white text-slate-800' : 'bg-[#FDFDFD] text-slate-800'
     }`}>
       
+      {/* Interactive WebGL Fluid Background */}
+      <FluidBackground />
+      
       {/* Background gradients glow effect in Landing View */}
       <AnimatePresence>
         {view === 'landing' && (
@@ -144,34 +149,49 @@ export default function App() {
           )}
         </AnimatePresence>
 
-        {/* Left side: Brand Logo / Home trigger */}
+        {/* Left side: Resume button (only visible on Landing View) */}
         <div className="flex-1 pointer-events-auto">
-          <button
-            onClick={() => setView('landing')}
-            className={`inline-flex items-center gap-2 backdrop-blur-xl border shadow-[0_8px_32px_rgba(0,0,0,0.05)] px-4 py-2 rounded-full text-sm font-semibold transition-all hover:scale-105 cursor-pointer ${
-              theme === 'dark' ? 'bg-zinc-900/40 border-zinc-800/50 hover:bg-zinc-800/50 text-zinc-300' : 'bg-white/30 border-white/50 hover:bg-white/50 text-slate-700'
-            }`}
-          >
-            <img src={logo} alt="Logo" className="w-5 h-5 object-contain" />
-            <span>Lokesh Ashapu</span>
-          </button>
+          <AnimatePresence>
+            {view === 'landing' && (
+              <motion.a
+                initial={{ opacity: 0, x: -10 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -10 }}
+                href="https://www.linkedin.com/in/ashapu-lokesh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`inline-flex items-center gap-2 backdrop-blur-xl border shadow-[0_8px_32px_rgba(0,0,0,0.05)] px-5 py-2.5 rounded-full text-sm font-semibold transition-all hover:scale-105 cursor-pointer ${
+                  theme === 'dark'
+                    ? 'bg-zinc-900/30 border-zinc-800/50 hover:bg-zinc-800/50 text-zinc-300'
+                    : 'bg-white/30 border-white/50 hover:bg-white/50 text-slate-700'
+                }`}
+              >
+                <div className="w-5 h-5 bg-zinc-800 dark:bg-zinc-700 rounded-full flex items-center justify-center shadow-inner">
+                  <svg className="w-2.5 h-2.5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3.5">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                  </svg>
+                </div>
+                <span>Resume</span>
+              </motion.a>
+            )}
+          </AnimatePresence>
         </div>
 
-        {/* Center side: Chat Memoji button (only in Chat mode to return to Landing) */}
+        {/* Center side: Chat Home avatar (only visible on Chat View) */}
         <div className="flex-1 flex justify-center pointer-events-auto">
           <AnimatePresence>
             {view === 'chat' && (
               <motion.button
                 onClick={() => setView('landing')}
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.95 }}
                 initial={{ scale: 0, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0, opacity: 0 }}
-                className="w-12 h-12 flex items-center justify-center text-3xl cursor-pointer bg-blue-600/10 hover:bg-blue-600/20 text-blue-500 border border-blue-500/20 rounded-full shadow-inner select-none"
-              >
-                👋
-              </motion.button>
+                className="w-14 h-14 rounded-full overflow-hidden shadow-md border-2 border-blue-500 hover:border-blue-600 cursor-pointer bg-cover bg-center select-none"
+                style={{ backgroundImage: `url(${loki})` }}
+                title="Go to Home"
+              />
             )}
           </AnimatePresence>
         </div>

@@ -4,8 +4,8 @@ export const featuredProjects = [
     category: "Full Stack Web",
     title: "CivicTrack",
     thumbnail: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=900&auto=format&fit=crop",
-    description: "A community issues portal designed for citizens to report civic problems such as road damage, water issues, and electricity cuts. Features status updates, map integration, and community upvotes.",
-    technologies: ["React", "CSS3", "Node.js", "Express", "MongoDB", "Mongoose"],
+    description: "An end-to-end civic issue reporting and tracking platform enabling citizens to easily report local infrastructure concerns. Features high-fidelity dashboards and Django-driven tracking metrics.",
+    technologies: ["React", "CSS3", "Node.js", "Express", "MongoDB", "Mongoose", "Django", "SQLite3", "Bootstrap"],
     links: [
       { label: "GitHub Repository", url: "https://github.com/LokeshAshapu/civictrack" }
     ]
@@ -13,10 +13,10 @@ export const featuredProjects = [
   {
     id: "2",
     category: "Healthcare IT",
-    title: "Meditrack",
+    title: "Meditrack Healthcare System",
     thumbnail: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=900&auto=format&fit=crop",
-    description: "An integrated patient medical record management and scheduling platform. Allows doctors to manage slots and patients to book doctor appointments, track prescriptions, and view health history.",
-    technologies: ["HTML5", "CSS3", "JavaScript", "Node.js", "Express", "MongoDB"],
+    description: "A secure healthcare management application streamlining patient registrations, medical appointments, and responsive doctor-patient dashboards with automatic email alerts.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
     links: [
       { label: "GitHub Repository", url: "https://github.com/LokeshAshapu/Meditrack" }
     ]
@@ -24,10 +24,10 @@ export const featuredProjects = [
   {
     id: "3",
     category: "E-Commerce / Rental",
-    title: "Gear4Rent",
+    title: "Gear4Rent Marketplace",
     thumbnail: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=900&auto=format&fit=crop",
-    description: "An online platform for renting photographic gear and tools. Features dynamic catalog filtering, shopping cart, custom renting calendar, secure checkout, reviews, and a dashboard for shop owners.",
-    technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap"],
+    description: "A sleek equipment renting marketplace layout connecting renters with equipment owners. Focuses on intuitive user checkout workflows, booking dashboard wireframes, and responsive controls.",
+    technologies: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap", "Responsive Design", "UI/UX Design"],
     links: [
       { label: "GitHub Repository", url: "https://github.com/LokeshAshapu/gear4rent" }
     ]
@@ -231,77 +231,88 @@ export const allRepositories = [
 export const experiences = [
   {
     id: "1",
-    period: "2025-Present",
+    period: "Mar 2026 – Present",
+    company: "Grovyn",
+    role: "Graphic Designer",
+    startMonth: "Mar 2026",
+    endMonth: "Present",
+    ongoing: true,
+    bullets: [
+      "Designed user-centric web and mobile interfaces using Figma with a focus on usability and responsive design.",
+      "Created wireframes, interactive prototypes, and custom design systems for digital products.",
+      "Collaborated closely with developers to ensure pixel-perfect implementation of UI designs.",
+      "Maintained design consistency and visual hierarchies across multiple channels."
+    ]
+  },
+  {
+    id: "2",
+    period: "Jul 2024 – Present",
+    company: "Anarva Web Studio",
+    role: "Founder & Lead Web Developer",
+    startMonth: "Jul 2024",
+    endMonth: "Present",
+    ongoing: true,
+    bullets: [
+      "Founded and managed a web development studio delivering modern websites and MVPs for early-stage startups.",
+      "Assembled responsive frontend layouts and interactive prototypes using React, Tailwind CSS, and Figma.",
+      "Provided comprehensive technical website audits to optimize performance, SEO scoring, and visual aesthetics.",
+      "Collaborated directly with startup founders to scope out features, wireframes, and deployment workflows."
+    ]
+  },
+  {
+    id: "3",
+    period: "Feb 2025 – Present",
     company: "Google",
     role: "Google Student Ambassador (GSA'25)",
     startMonth: "Feb 2025",
     endMonth: "Present",
     ongoing: true,
     bullets: [
-      "Leading technical student communities and representing Google programs on campus.",
+      "Leading technical student communities and representing Google developer programs on campus.",
       "Hosting and coordinating student workshops on UX/UI Design, Frontend Development, and Generative AI.",
-      "Facilitating developer challenge events and bridging campus talent with Google resources.",
-      "Collaborating with GSA peers across colleges to execute regional technical competitions."
-    ]
-  },
-  {
-    id: "2",
-    period: "2024-Present",
-    company: "Grovyn",
-    role: "Graphic Designer",
-    startMonth: "Jul 2024",
-    endMonth: "Present",
-    ongoing: true,
-    bullets: [
-      "Creating high-impact graphic design assets, social graphics, and marketing materials for brand campaigns.",
-      "Collaborating with product managers and developers to construct interactive Figma web prototypes.",
-      "Iterating design tokens and styling themes, maintaining visual hierarchy and brand consistency.",
-      "Designing responsive visual layouts that scale elegantly across modern device dimensions."
-    ]
-  },
-  {
-    id: "3",
-    period: "2024",
-    company: "Edunet Foundation",
-    role: "AI Chatbot & NLP Intern",
-    startMonth: "Nov 2024",
-    endMonth: "Dec 2024",
-    ongoing: false,
-    bullets: [
-      "Designed and trained text intent detection and classification models using Natural Language Processing.",
-      "Constructed a customer service chatbot with custom rule routing and fallback models.",
-      "Configured API endpoints using Flask/Node.js to pipe user queries to LLM response models.",
-      "Documented AI chatbot logic and integrated chat interfaces into test websites."
+      "Facilitating developer challenge events and bridging campus talent with Google resources."
     ]
   },
   {
     id: "4",
-    period: "2024",
-    company: "Edunet Foundation",
-    role: "AI Resume Screening & Ranking System Intern",
-    startMonth: "Sep 2024",
-    endMonth: "Nov 2024",
+    period: "Jul 2025 – Aug 2025",
+    company: "IBM Certification",
+    role: "Frontend Development Program",
+    startMonth: "Jul 2025",
+    endMonth: "Aug 2025",
     ongoing: false,
     bullets: [
-      "Built a Python OCR and text analysis script to extract metadata and key expertise from PDF resumes.",
-      "Developed a custom ranking model comparing applicant skills against job description text.",
-      "Implemented TF-IDF and Cosine Similarity scoring scripts in Scikit-learn for candidate sorting.",
-      "Assembled a clean web UI for recruiters to upload batch resumes and view ranked lists."
+      "Completed an intensive frontend development program focused on modern web technologies and UI/UX best practices.",
+      "Built responsive user interfaces while applying accessibility and performance optimization principles.",
+      "Practiced version control using Git and collaborative coding workflows."
     ]
   },
   {
     id: "5",
-    period: "2023-2024",
-    company: "IBM SkillsBuild",
-    role: "Frontend Web Developer (Trainee)",
-    startMonth: "Oct 2023",
-    endMonth: "Jan 2024",
+    period: "2025",
+    company: "Edunet Foundation",
+    role: "AI & Data Analytics Intern",
+    startMonth: "2025",
+    endMonth: "2025",
     ongoing: false,
     bullets: [
-      "Underwent intensive training in frontend fundamentals: HTML5, CSS3, ES6 JavaScript, and responsive design.",
-      "Built mock dashboard portals and e-commerce UI interfaces following design guidelines.",
-      "Practiced collaborative coding, version control with Git, and project planning paradigms.",
-      "Verified code compatibility across standard web browser engines and viewport ratios."
+      "Developed a smart restaurant chatbot using AI and data analytics to handle customer interactions.",
+      "Streamlined reservations and enhanced user experience with smart, automated responses and menu assistance.",
+      "Configured API integration endpoints to interface with language model outputs."
+    ]
+  },
+  {
+    id: "6",
+    period: "2025",
+    company: "Edunet Foundation",
+    role: "AI TechSaksham Intern",
+    startMonth: "2025",
+    endMonth: "2025",
+    ongoing: false,
+    bullets: [
+      "Developed an AI-driven resume screening and ranking system.",
+      "Utilized Natural Language Processing (NLP) and Machine Learning (ML) techniques to automate the evaluation of resumes.",
+      "Enabled efficient candidate-job matching, scoring resumes based on description relevance to reduce manual recruiting effort."
     ]
   }
 ];
