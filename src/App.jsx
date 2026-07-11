@@ -103,7 +103,7 @@ export default function App() {
     }`}>
       
       {/* Interactive WebGL Fluid Background */}
-      <FluidBackground />
+      {view === 'landing' && <FluidBackground />}
       
       {/* Background gradients glow effect in Landing View */}
       <AnimatePresence>
