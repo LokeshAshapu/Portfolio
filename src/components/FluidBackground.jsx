@@ -305,8 +305,8 @@ export default function FluidBackground() {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-40 pointer-events-none">
-      <canvas id="fluid" className="fixed top-0 left-0 w-full h-full z-40 pointer-events-none" />
+    <div className="fixed inset-0 z-0 pointer-events-none opacity-35">
+      <canvas id="fluid" className="fixed top-0 left-0 w-full h-full z-0 pointer-events-none" />
     </div>
   );
 }
