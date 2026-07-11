@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ContactCard({ theme }) {
   const contacts = [
-    { name: "LinkedIn", url: "https://www.linkedin.com/in/ashapu-lokesh" },
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/ashapu-lokesh-25159a298" },
     { name: "GitHub", url: "https://github.com/LokeshAshapu" },
     { name: "Portfolio Code", url: "https://github.com/LokeshAshapu/Portfolio" }
   ];

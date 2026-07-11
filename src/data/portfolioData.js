@@ -276,43 +276,44 @@ export const experiences = [
   {
     id: "4",
     period: "Jul 2025 – Aug 2025",
-    company: "IBM Certification",
-    role: "Frontend Development Program",
+    company: "Internshala Student Partner",
+    role: "Intern",
     startMonth: "Jul 2025",
     endMonth: "Aug 2025",
     ongoing: false,
     bullets: [
-      "Completed an intensive frontend development program focused on modern web technologies and UI/UX best practices.",
-      "Built responsive user interfaces while applying accessibility and performance optimization principles.",
-      "Practiced version control using Git and collaborative coding workflows."
+      "Promoted Internshala programs to 500+ students, increasing student engagement by 40%.",
+      "Organized 3 tech webinars with industry guest speakers.",
+      "Mentored 20+ peers on resume building and interview preparation."
     ]
   },
   {
     id: "5",
-    period: "2025",
-    company: "Edunet Foundation",
-    role: "AI & Data Analytics Intern",
-    startMonth: "2025",
-    endMonth: "2025",
+    period: "Jun 2025 – Jul 2025",
+    company: "IBM SkillsBuild",
+    role: "Click, Code and Create Program Intern",
+    startMonth: "Jun 2025",
+    endMonth: "Jul 2025",
     ongoing: false,
     bullets: [
-      "Developed a smart restaurant chatbot using AI and data analytics to handle customer interactions.",
-      "Streamlined reservations and enhanced user experience with smart, automated responses and menu assistance.",
-      "Configured API integration endpoints to interface with language model outputs."
+      "Developed dynamic frontend applications using HTML, CSS, and JavaScript within IBM SkillsBuild.",
+      "Utilized Agile methodologies via GitHub to collaborate on projects under tight deadlines.",
+      "Improved load times by 40% using lazy loading and CSS Grid layout structures."
     ]
   },
   {
     id: "6",
-    period: "2025",
+    period: "Jun 2025 – Jul 2025",
     company: "Edunet Foundation",
-    role: "AI TechSaksham Intern",
-    startMonth: "2025",
-    endMonth: "2025",
+    role: "AI & ML Intern",
+    startMonth: "Jun 2025",
+    endMonth: "Jul 2025",
     ongoing: false,
     bullets: [
-      "Developed an AI-driven resume screening and ranking system.",
-      "Utilized Natural Language Processing (NLP) and Machine Learning (ML) techniques to automate the evaluation of resumes.",
-      "Enabled efficient candidate-job matching, scoring resumes based on description relevance to reduce manual recruiting effort."
+      "Built a Machine Learning application using Random Forest Regressor to predict income categories.",
+      "Cleaned and prepared datasets using Pandas and NumPy, handling categorical encoding.",
+      "Enhanced prompt engineering workflows, improving AI chatbot output and responses by 30%.",
+      "Developed a smart restaurant chatbot and an AI-driven resume screening and ranking system."
     ]
   }
 ];

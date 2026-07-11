@@ -15,7 +15,7 @@ export function routeIntent(query) {
     return {
       intent: 'general',
       title: 'Education',
-      ai_text: "Lokesh is pursuing a Bachelor of Technology in Computer Science Engineering at Sri Sivani College of Engineering (affiliated with JNTU Kakinada), with a current CGPA of 8.01. He completed Intermediate education at PPR Kaumudi Junior College (9.01 CGPA) and High School at AP Model School (9.3 CGPA)."
+      ai_text: "Lokesh is pursuing a Bachelor of Technology in Computer Science Engineering at Sri Sivani College of Engineering (affiliated with JNTU Kakinada), with a current CGPA of 8.1. He completed Intermediate education at PPR Kaumudi Junior College (9.01 CGPA) and High School at AP Model School (9.3 CGPA)."
     };
   }
 
