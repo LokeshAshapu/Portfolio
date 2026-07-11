@@ -54,44 +54,30 @@ export default function LandingView({ onQuery, theme }) {
       transition={{ duration: 0.4 }}
       className="flex flex-col items-center justify-center w-full max-w-3xl min-h-screen pt-24 pb-16 px-6 text-center select-none"
     >
-      {/* GSA'25 Purple Badge */}
-      <motion.span
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-xs font-semibold tracking-wider text-purple-600 bg-purple-100 dark:text-purple-400 dark:bg-purple-950/30 px-3 py-1.5 rounded-full border border-purple-200/50 dark:border-purple-900/30 shadow-sm mb-6 inline-block"
-      >
-        GSA'25 & Product Designer
-      </motion.span>
-
       {/* Profile Photo */}
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.1, type: "spring", stiffness: 100 }}
         className={`w-32 h-32 md:w-36 md:h-36 rounded-[2.5rem] overflow-hidden shadow-lg border-2 mb-8 transition-colors duration-500 ${
-          theme === 'dark' ? 'border-[#1e293b] bg-[#0f172a]' : 'border-slate-200 bg-slate-100'
+          theme === 'dark' ? 'border-zinc-800 bg-zinc-900' : 'border-slate-200 bg-slate-100'
         }`}
       >
         <img src={loki} alt="Lokesh Ashapu" className="w-full h-full object-cover" />
       </motion.div>
 
-      {/* Headings & Bio */}
+      {/* Headings */}
       <div className="mb-8">
-        <h2 className={`text-xl sm:text-2xl font-semibold mb-2 transition-colors duration-500 ${
-          theme === 'dark' ? 'text-zinc-400' : 'text-slate-650'
+        <h2 className={`text-xl sm:text-2xl font-serif italic mb-2 transition-colors duration-500 ${
+          theme === 'dark' ? 'text-zinc-400' : 'text-slate-600'
         }`}>
-          Hi, I'm Lokesh Ashapu
+          Hey, I'm Ashapu Lokesh
         </h2>
-        <h1 className={`text-5xl sm:text-7xl font-black tracking-tight mb-4 transition-colors duration-500 ${
+        <h1 className={`text-5xl sm:text-7xl font-serif font-extrabold tracking-tight transition-colors duration-500 ${
           theme === 'dark' ? 'text-zinc-100' : 'text-slate-900'
         }`}>
           AI Developer & Designer
         </h1>
-        <p className={`max-w-xl mx-auto text-sm sm:text-base leading-relaxed mt-6 transition-colors duration-500 ${
-          theme === 'dark' ? 'text-zinc-400' : 'text-slate-500'
-        }`}>
-          Computer Engineering undergraduate, Google Student Ambassador (GSA'25), and Product Designer. Passionate about building user-centric digital products by combining design, technology, and AI to solve real-world problems.
-        </p>
       </div>
 
       {/* Search / Input Prompt Bar */}
@@ -104,7 +90,7 @@ export default function LandingView({ onQuery, theme }) {
             onChange={(e) => setQuery(e.target.value)}
             placeholder={placeholders[placeholderIndex]}
             className={`w-full shadow-[0_8px_32px_rgba(0,0,0,0.06)] border rounded-full py-4 pl-6 pr-14 text-[16px] focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/50 transition-all placeholder-zinc-400 ${
-              theme === 'dark' ? 'bg-[#0f172a]/60 border-[#1e293b] text-[#f8fafc]' : 'bg-white border-slate-200/60 text-slate-800'
+              theme === 'dark' ? 'bg-zinc-900/60 border-zinc-800/80 text-zinc-100' : 'bg-white border-slate-200/60 text-slate-800'
             }`}
           />
           <button
@@ -124,7 +110,7 @@ export default function LandingView({ onQuery, theme }) {
             onClick={() => handleSuggestionClick(s.query)}
             className={`flex items-center gap-1.5 backdrop-blur-md border shadow-sm px-4 py-2 rounded-full transition-all text-[13px] font-semibold hover:scale-105 hover:shadow-md cursor-pointer ${
               theme === 'dark'
-                ? 'bg-[#0f172a]/40 border-[#1e293b] hover:bg-[#0f172a] text-[#94a3b8] hover:text-[#f8fafc]'
+                ? 'bg-zinc-900/40 border-zinc-800/50 hover:bg-zinc-800/80 text-zinc-350'
                 : 'bg-white/30 border-white/50 hover:bg-white/70 text-slate-700'
             }`}
           >

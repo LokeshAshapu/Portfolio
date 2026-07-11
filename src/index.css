@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@350;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
-  --font-heading: "Outfit", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
 }
 
 /* Custom scrollbar utility */
@@ -30,10 +30,4 @@
 .blur-blob {
   filter: blur(120px);
   will-change: transform;
-}
-
-/* Prevent white flash - set default background on html/body/root */
-html, body, #root {
-  background-color: #070a13;
-  color: #f8fafc;
 }

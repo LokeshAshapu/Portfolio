@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ashapu Lokesh | AI Developer & Designer</title>
     <meta name="description" content="Ashapu Lokesh is a Computer Engineering Student, Product Designer, Frontend Developer, and Google Student Ambassador (GSA'25). I build interactive, intelligent web applications and AI tools." />
-    <!-- Theme loader to prevent flash of wrong theme -->
+    <!-- Theme loader to prevent flash of light mode -->
     <script>
       (function() {
-        const theme = localStorage.getItem('theme') || 'dark';
-        document.documentElement.setAttribute('data-theme', theme);
-        // Immediately set background so no flash occurs
-        document.documentElement.style.background = theme === 'dark' ? '#070a13' : '#f8fafc';
-        document.body.style.background = theme === 'dark' ? '#070a13' : '#f8fafc';
+        const theme = localStorage.getItem('theme') || 'light';
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
       })();
     </script>
   </head>
-  <body class="transition-colors duration-500 m-0" style="background:#070a13;">
+  <body class="transition-colors duration-500 m-0">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -23,7 +23,7 @@ export default function InfoModal({ isOpen, onClose, onContactClick, theme }) {
         exit={{ opacity: 0, scale: 0.95, y: 20 }}
         transition={{ type: 'spring', duration: 0.5 }}
         className={`relative w-full max-w-2xl rounded-[2rem] shadow-2xl p-8 md:p-12 overflow-hidden transition-colors duration-500 z-10 ${
-          theme === 'dark' ? 'bg-[#0f172a] text-[#f8fafc] border border-[#1e293b]' : 'bg-white text-slate-800'
+          theme === 'dark' ? 'bg-zinc-950 text-zinc-100 border border-zinc-800/80' : 'bg-white text-slate-800'
         }`}
       >
         {/* Header */}
@@ -36,7 +36,7 @@ export default function InfoModal({ isOpen, onClose, onContactClick, theme }) {
           <button
             onClick={onClose}
             className={`p-2 rounded-full transition-colors cursor-pointer ${
-              theme === 'dark' ? 'bg-[#070a13] text-[#94a3b8] hover:bg-[#0f172a] hover:text-[#f8fafc]' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
+              theme === 'dark' ? 'bg-zinc-900 text-zinc-400 hover:bg-zinc-850 hover:text-zinc-200' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'
             }`}
           >
             <X className="w-5 h-5" />

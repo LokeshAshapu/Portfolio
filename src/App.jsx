@@ -99,7 +99,7 @@ export default function App() {
 
   return (
     <div className={`min-h-screen relative flex flex-col font-sans transition-colors duration-500 ${
-      theme === 'dark' ? 'bg-[#070a13] text-[#f8fafc]' : 'bg-[#f8fafc] text-[#0f172a]'
+      theme === 'dark' ? 'bg-black text-slate-100' : view === 'chat' ? 'bg-white text-slate-800' : 'bg-[#FDFDFD] text-slate-800'
     }`}>
       
       {/* Interactive WebGL Fluid Background */}
@@ -116,13 +116,13 @@ export default function App() {
             className="fixed inset-0 z-0 pointer-events-none overflow-hidden"
           >
             <div className={`absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full blur-blob transition-colors duration-500 ${
-              theme === 'dark' ? 'bg-blue-950/15' : 'bg-blue-200/20'
+              theme === 'dark' ? 'bg-purple-900/10' : 'bg-purple-200/40'
             }`} />
             <div className={`absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full blur-blob transition-colors duration-500 ${
-              theme === 'dark' ? 'bg-teal-950/15' : 'bg-teal-200/20'
+              theme === 'dark' ? 'bg-blue-900/10' : 'bg-blue-200/40'
             }`} />
             <div className={`absolute top-[20%] right-[10%] w-[30%] h-[30%] rounded-full blur-blob transition-colors duration-500 ${
-              theme === 'dark' ? 'bg-blue-950/10' : 'bg-blue-100/20'
+              theme === 'dark' ? 'bg-orange-900/5' : 'bg-orange-100/40'
             }`} />
             <div className={`absolute bottom-16 sm:bottom-20 left-1/2 transform -translate-x-1/2 text-[7vw] sm:text-[5.5vw] md:text-[4.5vw] font-bold tracking-tighter whitespace-nowrap select-none transition-colors duration-500 ${
               theme === 'dark' ? 'text-zinc-800/20' : 'text-slate-200/30'
@@ -143,7 +143,7 @@ export default function App() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               className={`absolute top-0 left-0 right-0 h-40 -z-10 pointer-events-none transition-colors duration-500 ${
-                theme === 'dark' ? 'bg-gradient-to-b from-[#070a13] via-[#070a13]/95 to-transparent' : 'bg-gradient-to-b from-[#f8fafc] via-[#f8fafc]/95 to-transparent'
+                theme === 'dark' ? 'bg-gradient-to-b from-black via-black/95 to-transparent' : 'bg-gradient-to-b from-white via-white/95 to-transparent'
               }`}
             />
           )}
@@ -220,9 +220,7 @@ export default function App() {
       </header>
 
       {/* Main page content container */}
-      <main className={`flex-1 flex flex-col items-center w-full z-10 relative transition-colors duration-500 ${
-        theme === 'dark' ? 'bg-[#070a13]' : 'bg-[#f8fafc]'
-      }`}>
+      <main className="flex-1 flex flex-col items-center w-full z-10 relative">
         <AnimatePresence mode="wait">
           {view === 'landing' ? (
             <LandingView key="landing" onQuery={handleQuery} theme={theme} />
