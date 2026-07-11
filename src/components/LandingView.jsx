@@ -54,6 +54,15 @@ export default function LandingView({ onQuery, theme }) {
       transition={{ duration: 0.4 }}
       className="flex flex-col items-center justify-center w-full max-w-3xl min-h-screen pt-24 pb-16 px-6 text-center select-none"
     >
+      {/* GSA'25 Purple Badge */}
+      <motion.span
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-xs font-semibold tracking-wider text-purple-600 bg-purple-100 dark:text-purple-400 dark:bg-purple-950/30 px-3 py-1.5 rounded-full border border-purple-200/50 dark:border-purple-900/30 shadow-sm mb-6 inline-block"
+      >
+        GSA'25 & Product Designer
+      </motion.span>
+
       {/* Profile Photo */}
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
@@ -66,18 +75,23 @@ export default function LandingView({ onQuery, theme }) {
         <img src={loki} alt="Lokesh Ashapu" className="w-full h-full object-cover" />
       </motion.div>
 
-      {/* Headings */}
+      {/* Headings & Bio */}
       <div className="mb-8">
-        <h2 className={`text-xl sm:text-2xl font-serif italic mb-2 transition-colors duration-500 ${
-          theme === 'dark' ? 'text-zinc-400' : 'text-slate-600'
+        <h2 className={`text-xl sm:text-2xl font-semibold mb-2 transition-colors duration-500 ${
+          theme === 'dark' ? 'text-zinc-400' : 'text-slate-650'
         }`}>
-          Hey, I'm Ashapu Lokesh
+          Hi, I'm Lokesh Ashapu
         </h2>
-        <h1 className={`text-5xl sm:text-7xl font-serif font-extrabold tracking-tight transition-colors duration-500 ${
+        <h1 className={`text-5xl sm:text-7xl font-black tracking-tight mb-4 transition-colors duration-500 ${
           theme === 'dark' ? 'text-zinc-100' : 'text-slate-900'
         }`}>
           AI Developer & Designer
         </h1>
+        <p className={`max-w-xl mx-auto text-sm sm:text-base leading-relaxed mt-6 transition-colors duration-500 ${
+          theme === 'dark' ? 'text-zinc-400' : 'text-slate-500'
+        }`}>
+          Computer Engineering undergraduate, Google Student Ambassador (GSA'25), and Product Designer. Passionate about building user-centric digital products by combining design, technology, and AI to solve real-world problems.
+        </p>
       </div>
 
       {/* Search / Input Prompt Bar */}
