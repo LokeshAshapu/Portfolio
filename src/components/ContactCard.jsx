@@ -9,22 +9,22 @@ export default function ContactCard({ theme }) {
 
   return (
     <div className={`w-full border rounded-3xl p-6 md:p-8 mb-6 shadow-sm flex flex-col items-stretch text-left transition-colors duration-500 ${
-      theme === 'dark' ? 'bg-zinc-900/60 border-zinc-800/80 text-zinc-100' : 'bg-[#f8f9fa] border-slate-200/60 text-slate-800'
+      theme === 'dark' ? 'bg-[#0f172a]/60 border-[#1e293b] text-[#f8fafc]' : 'bg-[#f8f9fa] border-slate-200/60 text-slate-800'
     }`}>
       {/* Title block */}
       <div className="flex justify-between items-center mb-4">
         <h2 className={`text-2xl md:text-3xl font-bold tracking-tight transition-colors duration-500 ${
-          theme === 'dark' ? 'text-zinc-100' : 'text-slate-900'
+          theme === 'dark' ? 'text-[#f8fafc]' : 'text-slate-900'
         }`}>
           Contact
         </h2>
-        <span className={`text-sm md:text-base font-semibold ${theme === 'dark' ? 'text-zinc-500' : 'text-slate-400'}`}>
+        <span className={`text-sm md:text-base font-semibold ${theme === 'dark' ? 'text-[#64748b]' : 'text-slate-400'}`}>
           @LokeshAshapu
         </span>
       </div>
 
       <hr className={`mb-6 transition-colors duration-500 ${
-        theme === 'dark' ? 'border-zinc-800/60' : 'border-slate-200/80'
+        theme === 'dark' ? 'border-[#1e293b]' : 'border-slate-200/80'
       }`} />
 
       {/* Direct phone and email links */}
@@ -38,7 +38,7 @@ export default function ContactCard({ theme }) {
         <a
           href="tel:+916301451462"
           className={`font-semibold text-lg md:text-xl transition-colors self-start hover:text-blue-500 ${
-            theme === 'dark' ? 'text-zinc-300' : 'text-slate-700'
+            theme === 'dark' ? 'text-[#94a3b8]' : 'text-slate-700'
           }`}
         >
           +91 6301451462

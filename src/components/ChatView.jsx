@@ -153,7 +153,7 @@ export default function ChatView({
               className="w-full flex justify-start mb-6"
             >
               <div className={`flex items-center gap-1.5 px-5 py-4 shadow-sm rounded-2xl rounded-bl-sm w-fit transition-colors duration-500 ${
-                theme === 'dark' ? 'bg-zinc-900 border border-zinc-800/80' : 'bg-slate-100'
+                theme === 'dark' ? 'bg-[#0f172a] border border-[#1e293b]' : 'bg-slate-100'
               }`}>
                 <div className="w-2.5 h-2.5 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
                 <div className="w-2.5 h-2.5 bg-slate-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
@@ -184,7 +184,7 @@ export default function ChatView({
                 <div className="w-full flex justify-start mb-6">
                   <div className={`px-6 py-4 rounded-2xl rounded-bl-sm shadow-sm text-[15px] max-w-[85%] leading-relaxed transition-colors duration-500 ${
                     theme === 'dark'
-                      ? 'bg-zinc-900 text-zinc-200 border border-zinc-800/80'
+                      ? 'bg-[#0f172a] text-[#f8fafc] border border-[#1e293b]'
                       : 'bg-slate-100 text-slate-800 border border-slate-200/50'
                   }`}>
                     <AnimatedText text={activeMsg.ai_text} />
@@ -211,7 +211,7 @@ export default function ChatView({
                 onClick={() => handleQuickPrompt(pill.query, pill.intent)}
                 className={`flex items-center gap-1.5 backdrop-blur-md border shadow-sm px-3.5 py-2 rounded-full transition-all text-[12px] font-bold h-fit whitespace-nowrap cursor-pointer hover:scale-105 active:scale-95 ${
                   theme === 'dark'
-                    ? 'bg-zinc-900/50 border-zinc-800/60 hover:bg-zinc-800/80 text-zinc-300'
+                    ? 'bg-[#0f172a]/50 border-[#1e293b] hover:bg-[#0f172a] text-[#94a3b8] hover:text-[#f8fafc]'
                     : 'bg-white/40 border-white/60 hover:bg-white/70 text-slate-700'
                 }`}
               >
@@ -231,7 +231,7 @@ export default function ChatView({
             onKeyDown={(e) => e.key === 'Enter' && handleSend()}
             placeholder={placeholderText}
             className={`w-full shadow-[0_8px_32px_rgba(0,0,0,0.06)] border rounded-full py-4 pl-6 pr-14 text-[15px] focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/50 transition-all placeholder-zinc-400 ${
-              theme === 'dark' ? 'bg-zinc-900/70 border-zinc-800/80 text-zinc-100' : 'bg-white border-slate-200/60 text-slate-800'
+              theme === 'dark' ? 'bg-[#0f172a]/70 border-[#1e293b] text-[#f8fafc]' : 'bg-white border-slate-200/60 text-slate-800'
             }`}
           />
           <button

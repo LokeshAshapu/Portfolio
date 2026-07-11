@@ -69,7 +69,7 @@ export default function LandingView({ onQuery, theme }) {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.1, type: "spring", stiffness: 100 }}
         className={`w-32 h-32 md:w-36 md:h-36 rounded-[2.5rem] overflow-hidden shadow-lg border-2 mb-8 transition-colors duration-500 ${
-          theme === 'dark' ? 'border-zinc-800 bg-zinc-900' : 'border-slate-200 bg-slate-100'
+          theme === 'dark' ? 'border-[#1e293b] bg-[#0f172a]' : 'border-slate-200 bg-slate-100'
         }`}
       >
         <img src={loki} alt="Lokesh Ashapu" className="w-full h-full object-cover" />
@@ -104,7 +104,7 @@ export default function LandingView({ onQuery, theme }) {
             onChange={(e) => setQuery(e.target.value)}
             placeholder={placeholders[placeholderIndex]}
             className={`w-full shadow-[0_8px_32px_rgba(0,0,0,0.06)] border rounded-full py-4 pl-6 pr-14 text-[16px] focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/50 transition-all placeholder-zinc-400 ${
-              theme === 'dark' ? 'bg-zinc-900/60 border-zinc-800/80 text-zinc-100' : 'bg-white border-slate-200/60 text-slate-800'
+              theme === 'dark' ? 'bg-[#0f172a]/60 border-[#1e293b] text-[#f8fafc]' : 'bg-white border-slate-200/60 text-slate-800'
             }`}
           />
           <button
@@ -124,7 +124,7 @@ export default function LandingView({ onQuery, theme }) {
             onClick={() => handleSuggestionClick(s.query)}
             className={`flex items-center gap-1.5 backdrop-blur-md border shadow-sm px-4 py-2 rounded-full transition-all text-[13px] font-semibold hover:scale-105 hover:shadow-md cursor-pointer ${
               theme === 'dark'
-                ? 'bg-zinc-900/40 border-zinc-800/50 hover:bg-zinc-800/80 text-zinc-350'
+                ? 'bg-[#0f172a]/40 border-[#1e293b] hover:bg-[#0f172a] text-[#94a3b8] hover:text-[#f8fafc]'
                 : 'bg-white/30 border-white/50 hover:bg-white/70 text-slate-700'
             }`}
           >

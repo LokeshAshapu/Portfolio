@@ -6,7 +6,7 @@ export default function AboutMe({ theme }) {
     <div className="w-full flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
       {/* Profile Photo */}
       <div className={`w-48 h-48 md:w-56 md:h-56 shrink-0 rounded-[2rem] overflow-hidden shadow-sm border transition-colors duration-500 ${
-        theme === 'dark' ? 'bg-zinc-900 border-zinc-800' : 'bg-slate-100 border-slate-200/60'
+        theme === 'dark' ? 'bg-[#0f172a] border-[#1e293b]' : 'bg-slate-100 border-slate-200/60'
       }`}>
         <img src={loki} alt="Ashapu Lokesh" className="w-full h-full object-cover" />
       </div>

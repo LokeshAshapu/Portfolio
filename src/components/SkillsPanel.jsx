@@ -57,7 +57,7 @@ export default function SkillsPanel({ onSelectSkill, theme }) {
                   onClick={() => onSelectSkill(skill)}
                   className={`px-4.5 py-2.5 rounded-full border text-[13px] font-semibold transition-all shadow-sm cursor-pointer select-none ${
                     theme === 'dark'
-                      ? 'bg-zinc-900/60 border-zinc-800/80 hover:bg-zinc-850 hover:border-zinc-700 text-zinc-350 hover:text-zinc-100'
+                      ? 'bg-[#0f172a]/60 border-[#1e293b] hover:bg-[#0f172a] hover:border-blue-500/50 text-[#94a3b8] hover:text-[#f8fafc]'
                       : 'bg-white border-slate-200/60 hover:bg-slate-50 hover:border-slate-300 text-slate-700 hover:text-slate-900'
                   }`}
                 >

@@ -50,16 +50,16 @@ export default function ProjectsGrid({ onSelectProject, theme }) {
         <div className="flex gap-2">
           <button
             onClick={() => scroll('left')}
-            className={`w-10 h-10 rounded-full flex items-center justify-center border transition-colors cursor-pointer hover:bg-blue-600 hover:text-white ${
-              theme === 'dark' ? 'border-zinc-800 text-zinc-400' : 'border-slate-200 text-slate-650'
+            className={`w-10 h-10 rounded-full flex items-center justify-center border transition-all cursor-pointer hover:bg-blue-600 hover:text-white ${
+              theme === 'dark' ? 'border-[#1e293b] text-[#94a3b8] hover:bg-[#0f172a]' : 'border-slate-200 text-slate-650'
             }`}
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             onClick={() => scroll('right')}
-            className={`w-10 h-10 rounded-full flex items-center justify-center border transition-colors cursor-pointer hover:bg-blue-600 hover:text-white ${
-              theme === 'dark' ? 'border-zinc-800 text-zinc-400' : 'border-slate-200 text-slate-650'
+            className={`w-10 h-10 rounded-full flex items-center justify-center border transition-all cursor-pointer hover:bg-blue-600 hover:text-white ${
+              theme === 'dark' ? 'border-[#1e293b] text-[#94a3b8] hover:bg-[#0f172a]' : 'border-slate-200 text-slate-650'
             }`}
           >
             <ChevronRight className="w-5 h-5" />
@@ -103,7 +103,7 @@ export default function ProjectsGrid({ onSelectProject, theme }) {
       </div>
 
       {/* Divider */}
-      <hr className={`w-full my-12 border-0 h-px ${theme === 'dark' ? 'bg-zinc-800' : 'bg-slate-200'}`} />
+      <hr className={`w-full my-12 border-0 h-px ${theme === 'dark' ? 'bg-[#1e293b]' : 'bg-slate-200'}`} />
 
       {/* GitHub Repositories Search and Grid Section */}
       <div className="w-full text-left mb-8">
@@ -112,7 +112,7 @@ export default function ProjectsGrid({ onSelectProject, theme }) {
         }`}>
           GitHub Repositories
         </h2>
-        <p className={`text-sm ${theme === 'dark' ? 'text-zinc-400' : 'text-slate-500'}`}>
+        <p className={`text-sm ${theme === 'dark' ? 'text-[#94a3b8]' : 'text-slate-500'}`}>
           A filterable list of my open-source code and coding history from GitHub.
         </p>
       </div>
@@ -127,7 +127,7 @@ export default function ProjectsGrid({ onSelectProject, theme }) {
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Search repositories..."
             className={`w-full py-2.5 pl-10 pr-4 rounded-full border text-[14px] focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500/50 transition-all ${
-              theme === 'dark' ? 'bg-zinc-900 border-zinc-800 text-zinc-100' : 'bg-slate-50 border-slate-200 text-slate-800'
+              theme === 'dark' ? 'bg-[#0f172a] border-[#1e293b] text-[#f8fafc]' : 'bg-slate-50 border-slate-200 text-slate-800'
             }`}
           />
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
@@ -143,7 +143,7 @@ export default function ProjectsGrid({ onSelectProject, theme }) {
                 selectedLang === lang
                   ? 'bg-blue-600 border-blue-600 text-white shadow-sm'
                   : theme === 'dark'
-                  ? 'bg-zinc-900 border-zinc-800 text-zinc-400 hover:text-zinc-200'
+                  ? 'bg-[#0f172a] border-[#1e293b] text-[#94a3b8] hover:text-[#f8fafc]'
                   : 'bg-white border-slate-200 text-slate-650 hover:text-slate-800'
               }`}
             >
@@ -163,20 +163,20 @@ export default function ProjectsGrid({ onSelectProject, theme }) {
               target="_blank"
               rel="noopener noreferrer"
               className={`flex flex-col justify-between border rounded-[1.5rem] p-6 text-left shadow-sm hover:shadow-md hover:-translate-y-1 transition-all group duration-300 ${
-                theme === 'dark' ? 'bg-zinc-900/40 border-zinc-850 hover:border-zinc-700/80' : 'bg-[#fdfdfd] border-slate-200/60 hover:border-slate-300'
+                theme === 'dark' ? 'bg-[#0f172a]/60 border-[#1e293b] hover:border-blue-500/50' : 'bg-white border-slate-200/60 hover:border-slate-300'
               }`}
             >
               <div>
                 <div className="flex justify-between items-start gap-2 mb-2">
-                  <h3 className={`font-serif font-bold text-lg leading-snug group-hover:text-blue-500 transition-colors break-words ${
-                    theme === 'dark' ? 'text-zinc-100' : 'text-slate-800'
+                  <h3 className={`font-heading font-bold text-lg leading-snug group-hover:text-blue-500 transition-colors break-words ${
+                    theme === 'dark' ? 'text-[#f8fafc]' : 'text-slate-800'
                   }`}>
                     {repo.name}
                   </h3>
                   <ExternalLink className="w-4 h-4 text-slate-400 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
                 <p className={`text-xs leading-relaxed line-clamp-3 mb-6 font-normal ${
-                  theme === 'dark' ? 'text-zinc-400' : 'text-slate-500'
+                  theme === 'dark' ? 'text-[#94a3b8]' : 'text-slate-500'
                 }`}>
                   {repo.description || "No description provided. Click to view repository and codebase on GitHub."}
                 </p>
@@ -185,7 +185,7 @@ export default function ProjectsGrid({ onSelectProject, theme }) {
               {repo.language && (
                 <div className="flex items-center gap-1.5 mt-auto">
                   <span className={`w-2.5 h-2.5 rounded-full ${getLanguageColor(repo.language)}`} />
-                  <span className={`text-[11px] font-bold ${theme === 'dark' ? 'text-zinc-500' : 'text-slate-400'}`}>
+                  <span className={`text-[11px] font-bold ${theme === 'dark' ? 'text-[#64748b]' : 'text-slate-400'}`}>
                     {repo.language}
                   </span>
                 </div>
@@ -194,7 +194,7 @@ export default function ProjectsGrid({ onSelectProject, theme }) {
           ))
         ) : (
           <div className={`col-span-full py-16 text-center rounded-[2rem] border ${
-            theme === 'dark' ? 'bg-zinc-900/20 border-zinc-850 text-zinc-500' : 'bg-slate-50/50 border-slate-200 text-slate-400'
+            theme === 'dark' ? 'bg-[#0f172a]/20 border-[#1e293b] text-[#64748b]' : 'bg-slate-50/50 border-slate-200 text-slate-400'
           }`}>
             No repositories match your search or filter criteria.
           </div>
