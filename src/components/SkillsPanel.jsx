@@ -19,6 +19,7 @@ export default function SkillsPanel({ onSelectSkill, theme }) {
   };
 
   return (
+    <section className={`w-full transition-colors duration-500 ${theme === 'dark' ? 'bg-[#070a13]' : 'bg-[#f8fafc]'}`}>
     <div className="w-full flex flex-col items-start mb-12 relative z-10 pt-2">
       <div className="w-full text-left mb-6">
         <h2 className={`text-3xl font-bold tracking-tight transition-colors duration-500 ${
@@ -37,12 +38,12 @@ export default function SkillsPanel({ onSelectSkill, theme }) {
         {skillsData.map((category) => (
           <div key={category.title} className="w-full flex flex-col items-start">
             <h3 className={`text-xl font-bold mb-2 flex items-center gap-2 transition-colors duration-500 ${
-              theme === 'dark' ? 'text-zinc-100' : 'text-slate-900'
+              theme === 'dark' ? 'text-[#f8fafc]' : 'text-slate-900'
             }`}>
               <span className="text-blue-500 font-mono tracking-tighter">&lt;/&gt;</span>
               <span>{category.title}</span>
             </h3>
-            <p className={`text-xs mb-4 font-normal ${theme === 'dark' ? 'text-zinc-400' : 'text-slate-500'}`}>
+            <p className={`text-xs mb-4 font-normal ${theme === 'dark' ? 'text-[#94a3b8]' : 'text-slate-500'}`}>
               {category.description}
             </p>
 
@@ -69,5 +70,6 @@ export default function SkillsPanel({ onSelectSkill, theme }) {
         ))}
       </motion.div>
     </div>
+    </section>
   );
 }

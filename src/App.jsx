@@ -220,7 +220,9 @@ export default function App() {
       </header>
 
       {/* Main page content container */}
-      <main className="flex-1 flex flex-col items-center w-full z-10 relative">
+      <main className={`flex-1 flex flex-col items-center w-full z-10 relative transition-colors duration-500 ${
+        theme === 'dark' ? 'bg-[#070a13]' : 'bg-[#f8fafc]'
+      }`}>
         <AnimatePresence mode="wait">
           {view === 'landing' ? (
             <LandingView key="landing" onQuery={handleQuery} theme={theme} />

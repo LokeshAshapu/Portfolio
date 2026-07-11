@@ -125,7 +125,9 @@ export default function ChatView({
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="w-full flex-1 flex flex-col items-center pt-32 pb-6 px-4 relative"
+      className={`w-full flex-1 flex flex-col items-center pt-32 pb-6 px-4 relative min-h-screen transition-colors duration-500 ${
+        theme === 'dark' ? 'bg-[#070a13]' : 'bg-[#f8fafc]'
+      }`}
     >
       <div className="w-full max-w-4xl flex-1 flex flex-col relative z-10 pb-40">
         {/* User query bubble */}

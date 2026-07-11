@@ -38,6 +38,7 @@ export default function ProjectsGrid({ onSelectProject, theme }) {
   };
 
   return (
+    <section className={`w-full transition-colors duration-500 ${theme === 'dark' ? 'bg-[#070a13]' : 'bg-[#f8fafc]'}`}>
     <div className="w-full flex flex-col items-center mb-10 relative">
       {/* Featured Projects Carousel Section */}
       <div className="w-full flex justify-between items-center mb-6">
@@ -201,5 +202,6 @@ export default function ProjectsGrid({ onSelectProject, theme }) {
         )}
       </div>
     </div>
+    </section>
   );
 }

@@ -8,6 +8,7 @@ export default function ContactCard({ theme }) {
   ];
 
   return (
+    <section className={`w-full transition-colors duration-500 ${theme === 'dark' ? 'bg-[#070a13]' : 'bg-[#f8fafc]'}`}>
     <div className={`w-full border rounded-3xl p-6 md:p-8 mb-6 shadow-sm flex flex-col items-stretch text-left transition-colors duration-500 ${
       theme === 'dark' ? 'bg-[#0f172a]/60 border-[#1e293b] text-[#f8fafc]' : 'bg-[#f8f9fa] border-slate-200/60 text-slate-800'
     }`}>
@@ -60,5 +61,6 @@ export default function ContactCard({ theme }) {
         ))}
       </div>
     </div>
+    </section>
   );
 }

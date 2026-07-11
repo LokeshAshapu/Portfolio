@@ -31,3 +31,9 @@
   filter: blur(120px);
   will-change: transform;
 }
+
+/* Prevent white flash - set default background on html/body/root */
+html, body, #root {
+  background-color: #070a13;
+  color: #f8fafc;
+}

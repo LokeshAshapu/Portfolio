@@ -28,6 +28,7 @@ export default function ExperienceTimeline({ theme }) {
   };
 
   return (
+    <section className={`w-full transition-colors duration-500 ${theme === 'dark' ? 'bg-[#070a13]' : 'bg-[#f8fafc]'}`}>
     <div className="w-full flex flex-col items-center mb-12 relative z-10 pt-2">
       <div className="w-full text-left mb-8">
         <h2 className={`text-3xl font-bold tracking-tight transition-colors duration-500 ${
@@ -87,5 +88,6 @@ export default function ExperienceTimeline({ theme }) {
         ))}
       </motion.div>
     </div>
+    </section>
   );
 }
