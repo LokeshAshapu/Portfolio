@@ -246,10 +246,10 @@ export const experiences = [
   },
   {
     id: "2",
-    period: "Jul 2024 – Present",
+    period: "Feb 2026 – Present",
     company: "Anarva Web Studio",
-    role: "Founder & Lead Web Developer",
-    startMonth: "Jul 2024",
+    role: "Co-Founder & CEO",
+    startMonth: "Feb 2026",
     endMonth: "Present",
     ongoing: true,
     bullets: [
@@ -261,12 +261,27 @@ export const experiences = [
   },
   {
     id: "3",
-    period: "Feb 2025 – Present",
+    period: "Mar 2026 – Apr 2026",
+    company: "IBM SkillsBuild",
+    role: "AI Strategy & Business Intelligence",
+    startMonth: "Mar 2026",
+    endMonth: "Apr 2026",
+    ongoing: false,
+    bullets: [
+      "Designed and implemented AI-driven solutions for business forecasting and decision support using machine learning techniques.",
+      "Cleaned, transformed, and analyzed structured datasets using Python libraries to uncover actionable business insights.",
+      "Improved prompt engineering workflows to enhance chatbot quality, relevance, and response accuracy by 30%.",
+      "Developed intelligent chatbots and an AI-powered resume screening system to streamline business operations and hiring workflows."
+    ]
+  },
+  {
+    id: "4",
+    period: "Aug 2025 – Dec 2025",
     company: "Google",
     role: "Google Student Ambassador (GSA'25)",
-    startMonth: "Feb 2025",
-    endMonth: "Present",
-    ongoing: true,
+    startMonth: "Aug 2025",
+    endMonth: "Dec 2025",
+    ongoing: false,
     bullets: [
       "Leading technical student communities and representing Google developer programs on campus.",
       "Hosting and coordinating student workshops on UX/UI Design, Frontend Development, and Generative AI.",
@@ -274,46 +289,17 @@ export const experiences = [
     ]
   },
   {
-    id: "4",
-    period: "Jul 2025 – Aug 2025",
-    company: "Internshala Student Partner",
-    role: "Intern",
-    startMonth: "Jul 2025",
-    endMonth: "Aug 2025",
-    ongoing: false,
-    bullets: [
-      "Promoted Internshala programs to 500+ students, increasing student engagement by 40%.",
-      "Organized 3 tech webinars with industry guest speakers.",
-      "Mentored 20+ peers on resume building and interview preparation."
-    ]
-  },
-  {
     id: "5",
-    period: "Jun 2025 – Jul 2025",
+    period: "Jul 2025 – Aug 2025",
     company: "IBM SkillsBuild",
     role: "Click, Code and Create Program Intern",
-    startMonth: "Jun 2025",
-    endMonth: "Jul 2025",
+    startMonth: "Jul 2025",
+    endMonth: "Aug 2025",
     ongoing: false,
     bullets: [
       "Developed dynamic frontend applications using HTML, CSS, and JavaScript within IBM SkillsBuild.",
       "Utilized Agile methodologies via GitHub to collaborate on projects under tight deadlines.",
       "Improved load times by 40% using lazy loading and CSS Grid layout structures."
-    ]
-  },
-  {
-    id: "6",
-    period: "Jun 2025 – Jul 2025",
-    company: "Edunet Foundation",
-    role: "AI & ML Intern",
-    startMonth: "Jun 2025",
-    endMonth: "Jul 2025",
-    ongoing: false,
-    bullets: [
-      "Built a Machine Learning application using Random Forest Regressor to predict income categories.",
-      "Cleaned and prepared datasets using Pandas and NumPy, handling categorical encoding.",
-      "Enhanced prompt engineering workflows, improving AI chatbot output and responses by 30%.",
-      "Developed a smart restaurant chatbot and an AI-driven resume screening and ranking system."
     ]
   }
 ];
