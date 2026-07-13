@@ -124,7 +124,7 @@ export default function App() {
             <div className={`absolute top-[20%] right-[10%] w-[30%] h-[30%] rounded-full blur-blob transition-colors duration-500 ${
               theme === 'dark' ? 'bg-orange-900/5' : 'bg-orange-100/40'
             }`} />
-            <div className={`absolute bottom-16 sm:bottom-20 left-1/2 transform -translate-x-1/2 text-[7vw] sm:text-[5.5vw] md:text-[4.5vw] font-bold tracking-tighter whitespace-nowrap select-none transition-colors duration-500 ${
+            <div className={`absolute bottom-10 sm:bottom-20 left-1/2 transform -translate-x-1/2 text-[7vw] sm:text-[5.5vw] md:text-[4.5vw] font-bold tracking-tighter whitespace-nowrap select-none transition-colors duration-500 ${
               theme === 'dark' ? 'text-zinc-800/20' : 'text-slate-200/30'
             }`}>
               Think deeply. Build simply.
