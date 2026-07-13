@@ -5,6 +5,7 @@ import AboutMe from './AboutMe';
 import ProjectsGrid from './ProjectsGrid';
 import ExperienceTimeline from './ExperienceTimeline';
 import SkillsPanel from './SkillsPanel';
+import SkillProjectsPanel from './SkillProjectsPanel';
 import ContactCard from './ContactCard';
 
 // Typing effect component for the assistant response
@@ -176,6 +177,9 @@ export default function ChatView({
                   onSelectSkill={(skill) => onQuery(`Tell me about your experience with ${skill}.`, 'skills')}
                   theme={theme}
                 />
+              )}
+              {activeMsg?.type === 'skill_deep' && activeMsg?.skill && (
+                <SkillProjectsPanel skill={activeMsg.skill} theme={theme} />
               )}
               {activeMsg?.type === 'contact' && <ContactCard theme={theme} />}
 

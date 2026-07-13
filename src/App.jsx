@@ -78,6 +78,7 @@ export default function App() {
         let titleLabel = 'Response';
         if (routingResult.intent === 'projects') titleLabel = 'My Projects';
         if (routingResult.intent === 'skills') titleLabel = 'Skills & Expertise';
+        if (routingResult.intent === 'skill_deep') titleLabel = routingResult.title || 'Skill Deep-Dive';
         if (routingResult.intent === 'resume') titleLabel = 'Professional Experience';
         if (routingResult.intent === 'me') titleLabel = 'About Me';
         if (routingResult.intent === 'contact') titleLabel = 'Contact Lokesh';
@@ -86,6 +87,7 @@ export default function App() {
           id: (Date.now() + 1).toString(),
           query: queryText,
           type: routingResult.intent,
+          skill: routingResult.skill || null,
           title: titleLabel,
           ai_text: routingResult.ai_text
         };

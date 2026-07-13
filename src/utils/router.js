@@ -1,5 +1,40 @@
+// Map of keywords → canonical skill name (must match keys in SkillProjectsPanel's skillMeta)
+const SKILL_MAP = [
+  { keywords: ['react'], skill: 'React' },
+  { keywords: ['javascript', 'es6', 'js '], skill: 'JavaScript (ES6+)' },
+  { keywords: ['typescript', 'ts '], skill: 'TypeScript' },
+  { keywords: ['tailwind'], skill: 'Tailwind CSS' },
+  { keywords: ['html'], skill: 'HTML5' },
+  { keywords: ['css'], skill: 'CSS3' },
+  { keywords: ['bootstrap'], skill: 'Bootstrap' },
+  { keywords: ['node.js', 'nodejs', 'node js'], skill: 'Node.js' },
+  { keywords: ['express'], skill: 'Express' },
+  { keywords: ['django'], skill: 'Django' },
+  { keywords: ['mongodb', 'mongo'], skill: 'MongoDB' },
+  { keywords: ['python'], skill: 'Python' },
+  { keywords: ['figma'], skill: 'Figma' },
+  { keywords: ['prompt engineering', 'prompt'], skill: 'Prompt Engineering' },
+];
+
 export function routeIntent(query) {
   const t = query.toLowerCase().trim();
+
+  // ── Detect specific skill deep-dive ──────────────────────────────────────
+  // Triggers when user asks "Tell me about your experience with X" or
+  // clicks a skill pill: "Tell me about your experience with JavaScript (ES6+)."
+  const isSkillQuery = t.includes('experience with') || t.includes('skill') || t.includes('know about') || t.includes('tell me about');
+  if (isSkillQuery) {
+    for (const entry of SKILL_MAP) {
+      if (entry.keywords.some(kw => t.includes(kw))) {
+        return {
+          intent: 'skill_deep',
+          skill: entry.skill,
+          title: `${entry.skill} — Skills & Projects`,
+          ai_text: `Here's a summary of Lokesh's experience with ${entry.skill}, along with the GitHub projects where he has applied it.`
+        };
+      }
+    }
+  }
 
   // Contact
   if (t.includes('contact') || t.includes('email') || t.includes('linkedin') || t.includes('github') || t.includes('phone') || t.includes('reach') || t.includes('call')) {
@@ -28,12 +63,12 @@ export function routeIntent(query) {
     };
   }
 
-  // Skills
-  if (t.includes('skill') || t.includes('stack') || t.includes('technology') || t.includes('python') || t.includes('react') || t.includes('javascript') || t.includes('frontend') || t.includes('css') || t.includes('figma')) {
+  // Skills (generic overview)
+  if (t.includes('skill') || t.includes('stack') || t.includes('technology') || t.includes('frontend') || t.includes('what can you')) {
     return {
       intent: 'skills',
       title: 'Skills & Expertise',
-      ai_text: "Lokesh's core technical skills include Frontend Development (React, Tailwind CSS, JavaScript), Backend (Node.js, Express, Django), Database Management (MongoDB, SQL), UX/UI Design (Figma, graphic design), and AI Tools (Prompt Engineering)."
+      ai_text: "Lokesh's core technical skills include Frontend Development (React, Tailwind CSS, JavaScript), Backend (Node.js, Express, Django), Database Management (MongoDB, SQL), UX/UI Design (Figma, graphic design), and AI Tools (Prompt Engineering). Click any skill pill to explore related projects!"
     };
   }
 
