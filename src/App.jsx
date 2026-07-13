@@ -157,7 +157,7 @@ export default function App() {
                 initial={{ opacity: 0, x: -10 }}
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -10 }}
-                href="https://www.linkedin.com/in/ashapu-lokesh-25159a298"
+                href="https://drive.google.com/file/d/17B_tD0UL9mruBbaPCbXJL7shg5paqjor/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`inline-flex items-center gap-2 backdrop-blur-xl border shadow-[0_8px_32px_rgba(0,0,0,0.05)] px-5 py-2.5 rounded-full text-sm font-semibold transition-all hover:scale-105 cursor-pointer ${
