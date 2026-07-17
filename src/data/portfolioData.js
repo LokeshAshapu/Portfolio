@@ -247,7 +247,7 @@ export const experiences = [
   {
     id: "2",
     period: "Feb 2026 – Present",
-    company: "Anarva Web Studio",
+    company: "Anarva Systems",
     role: "Co-Founder & CEO",
     startMonth: "Feb 2026",
     endMonth: "Present",
